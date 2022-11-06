@@ -4,6 +4,6 @@ Tehtävät
 
 *Viikko 1*
 
-gitlog.txt
+[gitlog.txt](ot-harjoitustyo/laskarit/viikko1/gitlog.txt)
 
-komentorivi.txt
+[komentorivi.txt](ot-harjoitustyo/laskarit/viikko1/komentorivi.txt)
