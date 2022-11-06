@@ -1,0 +1,164 @@
+
+(base) Sari-Air:tiedostoja sari$ cd
+(base) Sari-Air:~ sari$ cd ot_viikko1
+(base) Sari-Air:ot_viikko1 sari$ mkdir tiedostoja
+(base) Sari-Air:ot_viikko1 sari$ cd tiedostoja
+(base) Sari-Air:tiedostoja sari$ touch file1.txt
+(base) Sari-Air:tiedostoja sari$ touc file2.txt
+-bash: touc: command not found
+(base) Sari-Air:tiedostoja sari$ touch file2.txt
+(base) Sari-Air:tiedostoja sari$ touch file3.txt
+(base) Sari-Air:tiedostoja sari$ git add .
+(base) Sari-Air:tiedostoja sari$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   file1.txt
+	new file:   file2.txt
+	new file:   file3.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   ../eka.txt
+	modified:   ../kolmas.txt
+
+(base) Sari-Air:tiedostoja sari$ git commit -m "uudet tiedostot"
+[master 9449e2a] uudet tiedostot
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 tiedostoja/file1.txt
+ create mode 100644 tiedostoja/file2.txt
+ create mode 100644 tiedostoja/file3.txt
+(base) Sari-Air:tiedostoja sari$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   ../eka.txt
+	modified:   ../kolmas.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(base) Sari-Air:tiedostoja sari$ nano file1.txt
+(base) Sari-Air:tiedostoja sari$ git rm file2.txt
+rm 'tiedostoja/file2.txt'
+(base) Sari-Air:tiedostoja sari$ git restore --staged
+git: 'restore' is not a git command. See 'git --help'.
+
+The most similar command is
+	remote
+(base) Sari-Air:tiedostoja sari$ nano file3.txt
+(base) Sari-Air:tiedostoja sari$ gitt add
+-bash: gitt: command not found
+(base) Sari-Air:tiedostoja sari$ git add
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+(base) Sari-Air:tiedostoja sari$ git add .
+(base) Sari-Air:tiedostoja sari$ git restore .
+git: 'restore' is not a git command. See 'git --help'.
+
+The most similar command is
+	remote
+(base) Sari-Air:tiedostoja sari$ rm file1.txt
+(base) Sari-Air:tiedostoja sari$ mv file2.txt file22.txt
+mv: rename file2.txt to file22.txt: No such file or directory
+(base) Sari-Air:tiedostoja sari$ git add .
+(base) Sari-Air:tiedostoja sari$ git commit -m "tiedosto uudelleen nimetty"
+[master fc0349f] tiedosto uudelleen nimetty
+ 3 files changed, 1 insertion(+)
+ delete mode 100644 tiedostoja/file1.txt
+ delete mode 100644 tiedostoja/file2.txt
+(base) Sari-Air:tiedostoja sari$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   ../eka.txt
+	modified:   ../kolmas.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(base) Sari-Air:tiedostoja sari$ git log --stat | cat
+commit fc0349fe98bb48a2b250ce6296e4441b4b5e117f
+Author: Sari <sarimarjaana@gmail.com>
+Date:   Sun Oct 30 12:07:39 2022 +0200
+
+    tiedosto uudelleen nimetty
+
+ tiedostoja/file1.txt | 0
+ tiedostoja/file2.txt | 0
+ tiedostoja/file3.txt | 1 +
+ 3 files changed, 1 insertion(+)
+
+commit 9449e2ad342e63e47cfce5b7f76465aab715bdbf
+Author: Sari <sarimarjaana@gmail.com>
+Date:   Sun Oct 30 11:59:35 2022 +0200
+
+    uudet tiedostot
+
+ tiedostoja/file1.txt | 0
+ tiedostoja/file2.txt | 0
+ tiedostoja/file3.txt | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 7cf422707ff8d6ec923ce77d3436cef39a2870a0
+Author: Sari <sarimarjaana@gmail.com>
+Date:   Sun Oct 30 11:22:43 2022 +0200
+
+    commitoidaan git add -p
+
+ eka.txt    | 1 +
+ kolmas.txt | 2 +-
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+
+commit 9192b86cfbc28041dc75310be36e15a7c668f91c
+Author: Sari <sarimarjaana@gmail.com>
+Date:   Sun Oct 30 11:18:10 2022 +0200
+
+    uudelleen nimetty kansio
+
+ tiedosto.txt => eka.txt | 0
+ toinen.txt              | 1 -
+ 2 files changed, 1 deletion(-)
+
+commit a3f61039c03881c29279613c6b23ac9507a7d4ee
+Author: Sari <sarimarjaana@gmail.com>
+Date:   Sun Oct 30 11:02:27 2022 +0200
+
+    uusi hakemisto ja tiedosto
+
+ stuff/testi.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 5c52ca5570047434d59d3af8d0e805d999e6790e
+Author: Sari <sarimarjaana@gmail.com>
+Date:   Sun Oct 30 10:58:11 2022 +0200
+
+    toinen muutos ja lisäys
+
+ kolmas.txt | 1 +
+ toinen.txt | 1 +
+ 2 files changed, 2 insertions(+)
+
+commit 73a6cb03d43b5f9c8894bc70c40dbbff5f3958be
+Author: Sari <sarimarjaana@gmail.com>
+Date:   Sun Oct 30 10:51:38 2022 +0200
+
+    muutos ja lisäys
+
+ tiedosto.txtc | 1 +
+ toinen.txt    | 0
+ 2 files changed, 1 insertion(+)
+
+commit a22fb0f774db8838b5ec5a25553b1bdd5d3ee5d8
+Author: Sari <sarimarjaana@gmail.com>
+Date:   Sun Oct 30 10:46:51 2022 +0200
+
+    tiedosto luotu
+
+ tiedosto.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+(base) Sari-Air:tiedostoja sari$ 
+
