@@ -1,2 +1,6 @@
-Tätä tehtävää en ole vielä voinut tehdä, koska en pääse kirjautumaan
-palvelimelle. Olen jättänyt siitä tukipyynnön ja odotan vastausta.
+kurssit
+└── ot2022
+    └── viikko1
+
+2 directories, 0 files
+nsari@melkki:~$ 
