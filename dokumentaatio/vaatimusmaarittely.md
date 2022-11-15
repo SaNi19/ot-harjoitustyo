@@ -1,18 +1,23 @@
 **Vaatimusmäärittely**
 
-Puusta pinoon on klapivarastosovellus, jolla voidaan ylläpitää  
-myytävän puutavaran varastotietoja, asiakastietoja ja asiakkaiden varauksia, 
-sekä seurata myyntimääriä ja myyntituloja.
+Klapivarastosovelluksella voidaan ylläpitää  
+myytävän puutavaran varastotietoja.
 
-Sovelluksessa on vain yksi käyttäjä, joka voi:
-- *voi luoda käyttäjätunnusen*
+**Sovelluksessa on vain yksi *käyttäjä*, joka voi:**
+- *luoda käyttäjätunnusen*
   - tunnuksen täytyy olla vähintään viisi merkkiä pitkä
 - *kirjautua sovellukseen*
   - jos käyttäjätunnus tai salasana on väärä, ohjelma ilmoittaa siitä
-- *kirjautunut käyttäjä näkee käyttöliittymän missä voi*
+- *kirjautunut käyttäjä näkee käyttöliittymän missä voi*:
   - lisätä varastosaldoa
-  - lisätä hinnan
-  - tallentaa asiakkaiden varauksia
-  - poistaa varauksia
-  - seurata myyntituloja
+  - pinenentää varastosaldoa
   - kirjautua ulos sovelluksesta
+
+**Sovellusta voi jatkokehittää niin, että sillä voi seurata asiakkaiden varauksia, 
+myyntimääriä ja myyntituloja.**
+
+  - lisätä varastotuotteelle hinnan
+  - lisätä asiakkaille varauksia
+  - kirjata myynnin 
+  - poistaa asiakkaan varauksen
+  - seurata myyntituloja
