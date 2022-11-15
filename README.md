@@ -12,3 +12,5 @@ Tehtävät
 *Viikko 2*
 
 [vaatimusmaarittely.md](https://github.com/SaNi19/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
+
+[työaikakirjanpito.numbers](https://github.com/SaNi19/ot-harjoitustyo/blob/master/dokumentaatio/Tyoaikakirjanpito.numbers)
