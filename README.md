@@ -9,4 +9,6 @@ Tehtävät
 
 [komentorivi.txt](https://github.com/SaNi19/ot-harjoitustyo/blob/master/laskarit/viikko1/komentorivi.txt)
 
+*Viikko 2*
+
 [vaatimusmaarittely.md](https://github.com/SaNi19/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
