@@ -6,10 +6,7 @@ class UI:
         self._entry = None
 
     def start(self):
-        self._entry = ttk.Entry(master=self._root)
-
-
-
+        
         login_heading_label = ttk.Label(master=self._root, text="Login")
 
         login_username_label = ttk.Label(master=self._root, text="Username")
@@ -55,9 +52,8 @@ class UI:
         create_password2_entry.grid(row=7, column=1, sticky=(constants.E, constants.W), padx=5, pady=5)
 
         create_button.grid(row=8, column=1, columnspan=2, sticky=constants.W, padx=5, pady=5)
-        self._entry.grid(row=9, column=0)
         self._root.grid_columnconfigure(1, weight=1)
-    
+
     def __handle_button_click(self):
         entry_value = self._entry.get()
         print(f"Value of entry is: {entry_value}")
