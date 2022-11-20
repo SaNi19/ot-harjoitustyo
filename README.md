@@ -19,4 +19,4 @@ Tehtävät
 
 [luokkakaavio.pdf](https://github.com/SaNi19/ot-harjoitustyo/blob/master/laskarit/viikko3/Luokkakaavio.png)
 
-[luokkakaavio1.pdf](https://github.com/SaNi19/ot-harjoitustyo/blob/master/laskarit/viikko3/Luokkakaavio2.pdf)
+[luokkakaavio2.pdf](https://github.com/SaNi19/ot-harjoitustyo/blob/master/laskarit/viikko3/Luokkakaavio2.pdf)
