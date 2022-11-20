@@ -16,3 +16,5 @@ Tehtävät
 [työaikakirjanpito.numbers](https://github.com/SaNi19/ot-harjoitustyo/blob/master/dokumentaatio/Tyoaikakirjanpito.numbers)
 
 *Viikko 3*
+
+[luokkakaavio.pdf](https://github.com/SaNi19/ot-harjoitustyo/blob/master/laskarit/viikko3/Luokkakaavio.png)
