@@ -17,6 +17,6 @@ Tehtävät
 
 *Viikko 3*
 
-[luokkakaavio.pdf](https://github.com/SaNi19/ot-harjoitustyo/blob/master/laskarit/viikko3/Luokkakaavio.png)
+[luokkakaavio1.png](https://github.com/SaNi19/ot-harjoitustyo/blob/master/laskarit/viikko3/Luokkakaavio.png)
 
-[luokkakaavio2.pdf](https://github.com/SaNi19/ot-harjoitustyo/blob/master/laskarit/viikko3/Luokkakaavio2.pdf)
+[luokkakaavio2.png](https://github.com/SaNi19/ot-harjoitustyo/blob/master/laskarit/viikko3/Luokkakaavio2.png)
