@@ -6,5 +6,5 @@ class TestUi(unittest.TestCase):
 	print("Test")
 
     def test_ui(self):
-	vastaus = str(self._root)
-	self.assertEqual(vastaus, "None")
+	answer = str(self._root)
+	self.assertEqual(answer, "None")
