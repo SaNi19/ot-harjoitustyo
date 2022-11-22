@@ -1,1 +1,3 @@
-src/ui/ui.py toteutettu graafinen kirjautumisen käyttöliittymä, mutta se ei sisällä vielä mitään toiminnallisuutta.
+- src/ui/ui.py toteutettu graafinen kirjautumisen käyttöliittymä
+- käyttöliittymä ei sisällä vielä mitään toiminnallisuutta
+- käyttöliittymä sisältää kirjautumiseen ja rekisteröitymiseen tekstikentät ja painikkeet
