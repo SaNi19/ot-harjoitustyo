@@ -16,7 +16,7 @@ Soveluksessa on tällä hetkellä käytössä teknisten vaikeuksien vuoksi vain 
 ## Komentorivikäyttö
 
 - *Ohjelman voi käynnistää komennolla:* poetry run invoke start
-- *Ohjelman vo testata komennolla:* poetry run invoke coverage-report
-- *Ohkjelmakoodin voi tarkistaa komennolla:* poetry run invoke lint
+- *Ohjelman voi testata komennolla:* poetry run invoke coverage-report
+- *Ohjelmakoodin voi tarkistaa komennolla:* poetry run invoke lint
 
 
