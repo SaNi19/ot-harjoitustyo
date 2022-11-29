@@ -2,6 +2,8 @@
 **Dokumentaatio**
 
 
-[arkkitehtuuri.md](https://github.com/SaNi19/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
+[Arkkitehtuurikuvaus](https://github.com/SaNi19/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
 
-[changelog.md](https://github.com/SaNi19/ot-harjoitustyo/blob/master/dokumentaatio/changelog.md)
+[changelog](https://github.com/SaNi19/ot-harjoitustyo/blob/master/dokumentaatio/changelog.md)
+
+[Työaikakirjanpito](https://github.com/SaNi19/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
