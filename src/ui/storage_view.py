@@ -1,9 +1,9 @@
 from tkinter import ttk, constants
 
 class StorageView:
-    def __init__(self, root, handle_hello):
+    def __init__(self, root, handle_login):
         self._root = root
-        self._handle_hello = handle_hello
+        self._handle_login = handle_login
         self._frame = None
 
         self._initialize()
@@ -23,7 +23,7 @@ class StorageView:
         add_entry = ttk.Entry(master=self._frame)
 
         add_button = ttk.Button(
-            master=self._frame, text="Add", command=self._handle_hello
+            master=self._frame, text="Add", command=self._handle_login
         )
         
         take_headin_label = ttk.Label(master=self._frame, text="Sells firewood from storage")
@@ -32,10 +32,10 @@ class StorageView:
         take_entry = ttk.Entry(master=self._frame)
 
         take_button = ttk.Button(
-            master=self._frame, text="Take", command=self._handle_hello
+            master=self._frame, text="Take", command=self._handle_login
         )
         logout_button = ttk.Button(
-            master=self._frame, text="Logout", command=self._handle_hello
+            master=self._frame, text="Logout", command=self._handle_login
         )
         add_heading_label.grid(row=0, column=1, columnspan=10, sticky=(
             constants.E, constants.W), padx=7, pady=7)
@@ -62,11 +62,4 @@ class StorageView:
 
         logout_button.grid(row=7, column=1, columnspan=2, sticky=constants.W, padx=5, pady=5)
 
-        '''button = ttk.Button(
-            master=self._frame,
-            text="Logout",
-            command=self._handle_hello
-        )'''
-
-        #add_label.grid(row=0, column=0)
-        #button.grid(row=1, column=0)
+        
