@@ -1,9 +1,9 @@
 from tkinter import ttk, constants
 
 class LoginView:
-    def __init__(self, root, handle_good_bye):
+    def __init__(self, root, handle_storage):
         self._root = root
-        self._handle_good_bye = handle_good_bye
+        self._handle_storage = handle_storage
         self._frame = None
 
         self._initialize()
@@ -25,7 +25,7 @@ class LoginView:
         login_password_entry = ttk.Entry(master=self._frame)
 
         login_button = ttk.Button(
-            master=self._frame, text="Login", command=self._handle_good_bye )
+            master=self._frame, text="Login", command=self._handle_storage)
 
         create_heading_label = ttk.Label(
             master=self._frame, text="Create a new account")
@@ -41,7 +41,7 @@ class LoginView:
         
         create_password2_entry = ttk.Entry(master=self._frame)
 
-        create_button = ttk.Button(master=self._frame, text="Registration")
+        create_button = ttk.Button(master=self._frame, text="Registration", command=self._handle_storage)
 
         login_heading_label.grid(row=0, column=1, columnspan=2, sticky=(
             constants.E, constants.W), padx=7, pady=7)
