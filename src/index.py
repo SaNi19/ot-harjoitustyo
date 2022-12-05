@@ -4,13 +4,12 @@ from ui.ui import UI
 
 def main():
     window = Tk()
-    window.title("wood storage")
+    window.title("Wood storage")
 
-    ui_view = UI(window)
-    ui_view.start()
+    ui = UI(window)
+    ui.start()
 
     window.mainloop()
 
-
-if __name__ == "main__":
+if __name__ == "__main__":
     main()
