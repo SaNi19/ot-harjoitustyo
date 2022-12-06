@@ -101,5 +101,3 @@ class LoginView:
             self.__users[username] = []
 
         self.__users[username].append(password)
-
-       
