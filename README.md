@@ -11,7 +11,7 @@
 
 ## Sovellu
 
-Soveluksessa on tällä hetkellä käytössä teknisten vaikeuksien vuoksi vain graaffinen krjautumisnäkymä.
+Sovellus sisältää kaksi näkymää, mutta tallennus ei ole vielä käytössä.
 
 ## Komentorivikäyttö
 
