@@ -1,15 +1,16 @@
 from tkinter import Tk
-from ui.ui import UI
+from ui.ui_view import UI
 
 
 def main():
     window = Tk()
     window.title("Wood storage")
 
-    ui = UI(window)
-    ui.start()
+    ui_view = UI(window)
+    ui_view.start()
 
     window.mainloop()
+
 
 if __name__ == "__main__":
     main()
