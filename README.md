@@ -7,6 +7,7 @@
 [Changelog](https://github.com/SaNi19/ot-harjoitustyo/blob/master/dokumentaatio/changelog.md)
 
 [Työaikakirjanpito](https://github.com/SaNi19/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
+
 [Release](https://github.com/SaNi19/ot-harjoitustyo/releases/tag/viikko5)
 
 
