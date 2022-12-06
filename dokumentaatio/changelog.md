@@ -14,4 +14,4 @@
 ## Viikko 5
 
 - Kirjautumisnäkymä toimii ja painikkeisiin on lisätty tapahtumankäsittely
-- Sovellukseen iisätty toinen näkymä, johon käyttäjä voi siirtyä kirjautmisnäkymäsät
+- Sovellukseen lisätty toinen näkymä, johon käyttäjä voi siirtyä kirjautmisnäkymäsät
