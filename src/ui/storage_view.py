@@ -51,7 +51,7 @@ class StorageView:
 
 
         add_button.grid(row=3, column=1, columnspan=2,
-                          sticky=constants.W, padx=5, pady=5)
+            sticky=constants.W, padx=5, pady=5)
 
         take_headin_label.grid(row=4, column=1, columnspan=10, sticky=(
             constants.E, constants.W), padx=7, pady=7)
@@ -64,5 +64,3 @@ class StorageView:
         take_button.grid(row=6, column=1, columnspan=2, sticky=constants.W, padx=5, pady=5)
 
         logout_button.grid(row=7, column=1, columnspan=2, sticky=constants.W, padx=5, pady=5)
-
-    
