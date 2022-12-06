@@ -1,9 +1,12 @@
 from tkinter import ttk, constants
 
+
 class StorageView:
     def __init__(self, root, handle_login):
         self._root = root
         self._handle_login = handle_login
+        
+
         self._frame = None
 
         self._initialize()
@@ -62,4 +65,4 @@ class StorageView:
 
         logout_button.grid(row=7, column=1, columnspan=2, sticky=constants.W, padx=5, pady=5)
 
-        
+    
