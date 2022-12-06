@@ -1,4 +1,3 @@
-from tkinter import Tk
 from ui.login_view import LoginView
 from ui.storage_view import StorageView
 
@@ -41,4 +40,3 @@ class UI:
         )
 
         self._current_view.pack()
-
