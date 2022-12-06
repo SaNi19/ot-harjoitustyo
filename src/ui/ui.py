@@ -41,3 +41,4 @@ class UI:
         )
 
         self._current_view.pack()
+
