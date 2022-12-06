@@ -10,3 +10,8 @@
 
 - Kirjautumisnäkymä toteutettu uudestaan, koska ei toiminut edellisellä viikolla
 - Toisen näkymän lisääminen ohjelmaan lopetti koko ohjelman toiminnan, jonka vuoksi se poistettiin toistaiseksi
+
+## Viikko 5
+
+- Kirjautumisnäkymä toimii ja painikkeisiin on lisätty tapahtumankäsittely
+- Sovellukseen nisätty toinen näkymä, johon käyttäjä voi siirtyä kirjautmisnäkymäsät
