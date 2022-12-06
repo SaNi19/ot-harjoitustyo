@@ -95,8 +95,6 @@ class LoginView:
        if not username in self.__users:
             return None
     
-        
-
 
     def _create_user(self, username: str, password: str):
         if not username in self.__users:
