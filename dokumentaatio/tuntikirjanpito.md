@@ -10,8 +10,7 @@
 |26.11. | 7  |Kirjautumissivun toteutus uudelleen
 |27.11. | 6  |Projektin ohjeiden kertaus ja uuden näkymän toteutusta
 |28.11. | 4  |Vian etsintää koodista, koodin muodon tarkistusta
-|29.11. | 4  |Ohjelman palauttaminen toimivaan versioon, arkkitehtuurikuvaus
-|yht    |32  |
+|29.11. | 4  |Ohjelman palauttaminen toimivaan versioon, arkkitehtuurikuvau
 |2.12. | 2  |Kirjautumissivun toteutus uudelleen
 |3.12. | 6  |Projektin ohjeiden kertaus ja uuden näkymän toteutusta
 |4.12. | 3  |Vian etsintää koodista, koodin muodon tarkistusta
