@@ -1,0 +1,107 @@
+(base) Sari-Air:tiedostoja sari$ git log --stat | cat
+commit 52ee5d56ae3c143d9f9b7d12d6ad4c1ceeb0fad6
+Author: Sari <sarimarjaana@gmail.com>
+Date:   Sat Mar 18 13:01:50 2023 +0200
+
+    y
+
+ tiedostoja/file2.txt                 | 0
+ tiedostoja/{file1.txt => file22.txt} | 0
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+
+commit cb4dd7eedabddfd6eac7cf80cd3f353cf230b0fd
+Author: Sari <sarimarjaana@gmail.com>
+Date:   Sat Mar 18 12:53:29 2023 +0200
+
+    tiedostot lisätty
+
+ tiedostoja/file1.txt | 0
+ tiedostoja/file2.txt | 0
+ tiedostoja/file3.txt | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 0a0ce47801915f89fe50c099b357bf96eabf050a
+Author: Sari <sarimarjaana@gmail.com>
+Date:   Sat Mar 18 12:47:01 2023 +0200
+
+    muutos peruttu
+
+ kolmas.txt | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 57e7c33af415ca2cc23165c52dfffb36dadbfbba
+Author: Sari <sarimarjaana@gmail.com>
+Date:   Sat Mar 18 12:09:44 2023 +0200
+
+    eka.txt ja kolmas.txt muokattu
+
+ eka.txt    | 4 ++--
+ kolmas.txt | 2 +-
+ 2 files changed, 3 insertions(+), 3 deletions(-)
+
+commit 54df302ce5fbeff51787a57c5ae8bed5dee41ca5
+Author: Sari <sarimarjaana@gmail.com>
+Date:   Sat Mar 18 12:06:32 2023 +0200
+
+    tiedosto.txt nimetty uudelleen eka.txt
+
+ tiedosto.txt => eka.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit d0be82fb6c8e755fd6e527d0f4b15836c7463a6c
+Author: Sari <sarimarjaana@gmail.com>
+Date:   Sat Mar 18 12:05:57 2023 +0200
+
+    tiedosto.txt nimietty uudelleen eka.txt
+
+ toinen.txt | 1 -
+ 1 file changed, 1 deletion(-)
+
+commit f8921bd44754f831abc5ae0f7b426b46b94d00a6
+Author: Sari <sarimarjaana@gmail.com>
+Date:   Sat Mar 18 11:57:37 2023 +0200
+
+    neljas.txt luotu
+
+ stuff/neljas.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 5b987c64ee665d303eece667e1a34d865d521232
+Author: Sari <sarimarjaana@gmail.com>
+Date:   Sat Mar 18 11:33:45 2023 +0200
+
+    tiedostoja toinen ja kolmas muokattu
+
+ kolmas.txt | 1 +
+ toinen.txt | 1 +
+ 2 files changed, 2 insertions(+)
+
+commit c70dfa6c259ae089222af1a2bd56cc87ad3f4de8
+Author: Sari <sarimarjaana@gmail.com>
+Date:   Sat Mar 18 11:30:42 2023 +0200
+
+    kolmas.txt luotu
+
+ kolmas.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit f08164e579c20925a13f5c8f7d96f8c0c1c9a13d
+Author: Sari <sarimarjaana@gmail.com>
+Date:   Sat Mar 18 11:11:27 2023 +0200
+
+    muutos ja lisäys
+
+ tiedosto.txt | 2 ++
+ toinen.txt   | 0
+ 2 files changed, 2 insertions(+)
+
+commit d6479ec9308aa5e54f1bd81370679c0986a8f188
+Author: Sari <sarimarjaana@gmail.com>
+Date:   Sat Mar 18 11:05:51 2023 +0200
+
+    tiedosto.txt luotu
+
+ tiedosto.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+(base) Sari-Air:tiedostoja sari$ 
+
