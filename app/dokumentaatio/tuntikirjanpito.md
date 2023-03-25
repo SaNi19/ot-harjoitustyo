@@ -2,6 +2,6 @@
 
 | päivä | aika | mitä tein  |
 | :----:|:-----| :-----|
-| 25.3. | 2   | tutustuminen harjoitustyön ohjeisiin |
-| 269.3. | 43    | käyttöliittymän alustava suunnittelu |
+| 25.3. |12   | tutustuminen harjoitustyön ohjeisiin |
+| 26.3. | 3    | käyttöliittymän alustava suunnittelu |
 | 
