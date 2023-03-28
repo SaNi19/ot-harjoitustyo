@@ -2,29 +2,26 @@
 
 ## Sovelluksen tarkoitus
 
-Sovellus on sokoban-peli, jota voi pelata kerrallaan yksi pelaajaa. Pelaajan tavoitteena on siirtää pelilaudalla olevat esineent käytäviä pitkin varastoon. Alkuvaiheessa peli sisältää vain yhden peliversion, mutta myöhemmin peliin voidaan lisätä uusia vaativuustasoltaan versioita. 
-
-## Käyttäjät
-
-Sovelluksella on ainoastaan yksi käyttäjärooli _käyttäjä_. Myöhemmin sovellukseen voidaan lisätä rooli _pääkäyttäjä_, joka voi muokata ja kehittää peliä.
+Sokoban on yhden pelaajan älypelisovellus, jossa pelaajan tavoitteena on siirtää pelihahmon avulla pelilaudalla olevat esineent käytäviä pitkin varastoon. Alkuvaiheessa peli sisältää vain yhden helpon pelilautaversion, mutta myöhemmin peliin voidaan laajentaa lisäämällä uusia vaativuustasoltaan erilaisia pelilautoja. 
 
 ## Käyttöliittymä
-Alkuvaiheessa sovelluksessa on vain pelinäkymä. Myöhemmin sovellukseen voidaan tehdä kirjautumisnäky, jossa _käyttäjä voi luoda käyttäjätunnuksen ja kirjautua peliin.
+Alkuvaiheessa sovelluksessa on käyttöliittymänä pelinäkymä. Myöhemmin sovellukseen voidaan tehdä kirjautumisnäky, jossa käyttäjä voi luoda käyttäjätunnuksen ja kirjautua peliin.
 
 ## Sovelluksen toiminnallisuus
 - Käyttäjä voi pelata peliä 
 - Käyttäjä voi sulkea pelin ennen pelin päättymisä
-- Käyttäjä voi seurata pelin pistetaulua
-- Peli päättyy, kun kaikki esineet on oikein varastossa
-- Päättyneen pelin jälkeen pelin voi pelata uudestaan tai sulkea sovelluksen
+- Käyttäjä voi seurata pelin siirtojen määrää
+- Peli päättyy, kun kaikki esineet ovat varastossa
+- Päättyneen pelin jälkeen pelaaja voi pelata pelin uudestaan tai sulkea sovelluksen
 
 ## Sovelluksen jatkokehitys
+Sovellusta voidaan jatkokehittää lisäämällä peliin uusia pelilautoja ja pelitulosten tallennus.
 - Käyttäjä voi luoda pelaajatunnuksen
 - Käyttäjä voi kirjautua peliin
-- Käyttäjän pelit tallennetaan tietokantaan
-- Käytäjä näkee oman tuloksen ja toisten käyttäjien tuloslistan
+- Käyttäjän pelit tallennetaan tietokantaan tai tiedostoon
+- Käytäjä näkee uudelleen kirjautuessa oman pelaamisen tulokset
 - Käyttäjä voi kirjautua ulos sovelluksesta
-- Käyttäjä voi valita pelin useista vaativuustasoista
+- Käyttäjä voi valita pelin useista eri vaihtoehdoista
 
 
 
