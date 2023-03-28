@@ -6,4 +6,5 @@
 | 25.3. | 3    | käyttöliittymän alustava suunnittelu |
 | 26.3. | 3   |pelin suunnittelua|
 | 27.3. | 3   |vaatimusmäärittelyn toteutus |
-| yht.  | 10   |
+| 28.3. | 1   |vaatimusmäärittelyn muokkausta |
+| yht.  | 11  |
