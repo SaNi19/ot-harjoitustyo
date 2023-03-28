@@ -23,7 +23,10 @@ Sovellusta voidaan jatkokehittää esimerkiksi lisäämällä peliin kirjautumis
 - Käytäjä näkee uudelleen kirjautuessa oman pelaamisen tulokset
 - Käyttäjä voi kirjautua ulos sovelluksesta
 
+## Käyttöliittymäluonnos
 
+
+![Käyttöliittymäluonnos](https://user-images.githubusercontent.com/51118190/228329763-b526b9b4-36d5-40a0-b716-2366b222fc6e.png)
 
 
 
