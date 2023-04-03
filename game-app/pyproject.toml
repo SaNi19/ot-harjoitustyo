@@ -8,6 +8,8 @@ packages = [{include = "game_app"}]
 
 [tool.poetry.dependencies]
 python = "^3.8"
+invoke = "^2.0.0"
+pygame = "^2.3.0"
 
 
 [build-system]
