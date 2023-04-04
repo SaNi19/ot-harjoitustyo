@@ -7,4 +7,7 @@
 | 26.3. | 3   |pelin suunnittelua|
 | 27.3. | 3   |vaatimusmäärittelyn toteutus |
 | 28.3. | 1   |vaatimusmäärittelyn muokkausta |
-| yht.  | 11  |
+|  1.4. | 3   |pelin suunnittelua |
+|  2.4. | 2   |pelin toteutusta |
+|  3.4. | 3   |pelin toteutusta |
+| yht.  | 19  |
