@@ -1,0 +1,1 @@
+- Ohjelman käynnistys lataa pelilaudan näytölle
