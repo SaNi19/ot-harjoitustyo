@@ -8,8 +8,8 @@ Sokoban on yhden pelaajan älypelisovellus, jossa pelaajan tavoitteena on siirt�
 Alkuvaiheessa sovelluksessa on käyttöliittymänä pelinäkymä. Myöhemmin sovellukseen voidaan tehdä kirjautumisnäky, jossa käyttäjä voi luoda käyttäjätunnuksen ja kirjautua peliin.
 
 ## Sovelluksen toiminnallisuus
-- Käyttäjä voi pelata peliä 
-- Käyttäjä voi sulkea pelin ennen pelin päättymisä
+- Käyttäjä voi pelata peliä ✓
+- Käyttäjä voi sulkea pelin ennen pelin päättymisä ✓
 - Käyttäjä voi seurata pelin siirtojen määrää
 - Peli päättyy, kun kaikki esineet ovat varastossa
 - Päättyneen pelin jälkeen pelaaja voi pelata pelin uudestaan tai sulkea sovelluksen
