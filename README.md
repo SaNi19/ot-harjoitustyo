@@ -1,7 +1,7 @@
 # Ohjelmistotekniikka, harjoitustyö
 
 ## MySokoban
-MySokoban on pelisovellus, jota voi pelata yksi pelaaja kerrallaan. Pelin tavoitteena on siirtää käytävillä olevat pallot varastoon. Pelin voi läpäistä usealla eri tavalla. Peli päättyy, kun kaikki pallot on varastossa, tai kun pelaaja sulkee pelin.
+MySokoban on pelisovellus, jota voi pelata yksi pelaaja kerrallaan. Peliä pelataan siirtämällä pelihahmoa nuolinäppäimien avulla. Pelin tavoitteena on siirtää käytävillä olevat pallot varastoon. Pelin voi läpäistä usealla eri tavalla. Peli päättyy, kun kaikki pallot on saatu varastoon merkityille paikoille, tai kun pelaaja sulkee pelin.
 
 
 ## Dokumentaatio
