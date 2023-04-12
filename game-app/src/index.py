@@ -1,3 +1,4 @@
+import sys
 import pygame
 
 
@@ -47,9 +48,9 @@ class MySokoban:
                 if command.key == pygame.K_DOWN:
                     self.move(1, 0)
                 if command.key == pygame.K_ESCAPE:
-                    exit()
+                    sys.exit()
             if command.type == pygame.QUIT:
-                exit()
+                sys.exit()
 
     def move(self, move_y, move_x):
         if self.game_done():
