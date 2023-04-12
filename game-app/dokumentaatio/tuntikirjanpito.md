@@ -10,4 +10,8 @@
 |  1.4. | 3   |pelin suunnittelua |
 |  2.4. | 2   |pelin toteutusta |
 |  3.4. | 3   |pelin toteutusta |
-| yht.  | 19  |
+| 7.4.  | 2   |pelin toiminnan suunnittelua|
+| 9.4.  | 2   |pelin toiminnan testausta| 
+| 11.4. | 3   |koodin laatutarkistusta|
+| 12.4. | 2   |README:n ja gitignoren muokkausta|
+| yht.  | 28  |
