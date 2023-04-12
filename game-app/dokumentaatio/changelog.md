@@ -5,5 +5,5 @@
 ## Viikko 4 ##
 
 - Ohjelmaan on lisätty tapahtumankäsittely pelihahmolle ja palloille
-- Pelaaja voi liikkua pelihahmolla pelilaudalla nuolinäppäimilla
-- Pelaaja voi liikuttaa pelilaudan palloja pelihahmon avulla
+- Pelaaja voi liikuttaa pelihahmolla pelilaudalla nuolinäppäimillä
+- Pelaaja voi liikuttaa pelilaudan palloja pelihahmon avulla nuolinäppäimillä
