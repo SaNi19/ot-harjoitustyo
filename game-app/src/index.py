@@ -22,7 +22,7 @@ class MySokoban:
 
     def images(self):
         self.images = []
-        for name in ["floor", "wall", "place", "ball", "player", "valmis", "kohderobo"]:
+        for name in ["floor", "wall", "place", "ball", "player", "end", "player2"]:
             self.images.append(pygame.image.load(name + ".png"))
 
     def game(self):
@@ -52,7 +52,7 @@ class MySokoban:
                 exit()
 
     def move(self, move_y, move_x):
-        if self.peli_lapi():
+        if self.game_done():
             return
 
         old_player_y, old_player_x = self.find()
@@ -86,13 +86,13 @@ class MySokoban:
 
         for column in range(self.height):
             for row in range(self.width):
-                ruutu = self.map[column][row]
+                square = self.map[column][row]
                 self.sreen.blit(
-                    self.images[ruutu], (row * self.part, column * self.part))
+                    self.images[square], (row * self.part, column * self.part))
 
         pygame.display.flip()
 
-    def peli_lapi(self):
+    def game_done(self):
         for column in range(self.height):
             for row in range(self.width):
                 if self.map[column][row] in [2, 6]:

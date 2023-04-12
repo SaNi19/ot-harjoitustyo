@@ -1,16 +1,18 @@
 import unittest
-import pygame
 from index import MySokoban
+
+map = [[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+       [1, 4, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 1],
+       [1, 0, 0, 3, 1, 0, 3, 0, 0, 3, 0, 1, 1, 0, 1, 1],
+       [1, 0, 0, 0, 1, 3, 1, 1, 3, 3, 0, 1, 2, 2, 2, 1],
+       [1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 2, 1],
+       [1, 0, 3, 0, 3, 1, 3, 0, 1, 1, 1, 1, 0, 0, 2, 1],
+       [1, 0, 1, 1, 0, 0, 0, 0, 0, 3, 0, 0, 2, 2, 2, 1],
+       [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]]
+
+part = 50
 
 
 class TestMySokoban(unittest.TestCase):
     def setUp(self):
-        print("Hello")
-
-    def test_set_caption(self):
-        pygame.init()
-        name = pygame.display.set_caption("My Sokoban")
-    
-        self.assertEquals(name, "My Sokoban")
-
-    
+        self.map = MySokoban(map)
