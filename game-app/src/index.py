@@ -2,6 +2,7 @@ import sys
 import pygame
 
 
+
 class MySokoban:
     def __init__(self):
         pygame.init()
