@@ -8,7 +8,7 @@ class MySokoban:
         pygame.init()
         pygame.display.set_caption("MySokoban")
 
-        self.images()
+        self.gallery()
         self.game()
 
         self.height = len(self.map)
@@ -22,7 +22,7 @@ class MySokoban:
 
         self.loop()
 
-    def images(self):
+    def gallery(self):
         self.images = []
         for name in ["floor", "wall", "place", "ball", "player", "end", "player2"]:
             self.images.append(pygame.image.load(name + ".png"))
@@ -109,3 +109,4 @@ class MySokoban:
 
 if __name__ == "__main__":
     MySokoban()
+  
