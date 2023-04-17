@@ -8,12 +8,12 @@ class MySokoban:
         pygame.init()
         pygame.display.set_caption("MySokoban")
 
-        self.gallery()
+        self.images()
         self.game()
 
         self.height = len(self.map)
         self.width = len(self.map[1])
-        self.part = self.images[1].get_width()
+        self.part = self.imageset[0].get_width()
 
         gamemap_height = self.part * self.height
         gamemap_width = self.part * self.width
@@ -22,10 +22,10 @@ class MySokoban:
 
         self.loop()
 
-    def gallery(self):
-        self.images = []
+    def images(self):
+        self.imageset = []
         for name in ["floor", "wall", "place", "ball", "player", "end", "player2"]:
-            self.images.append(pygame.image.load(name + ".png"))
+            self.imageset.append(pygame.image.load(name + ".png"))
 
     def game(self):
         self.map = [[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
@@ -54,9 +54,6 @@ class MySokoban:
                 sys.exit()
 
     def move(self, move_y, move_x):
-        if self.game_done():
-            return
-
         old_player_y, old_player_x = self.find()
         new_player_y = old_player_y + move_y
         new_player_x = old_player_x + move_x
@@ -80,7 +77,7 @@ class MySokoban:
     def find(self):
         for column in range(self.height):
             for row in range(self.width):
-                if self.map[column][row] in [4, 6]:
+                if self.map[column][row] in [4,6]:
                     return (column, row)
 
     def display_game(self):
@@ -90,16 +87,9 @@ class MySokoban:
             for row in range(self.width):
                 square = self.map[column][row]
                 self.sreen.blit(
-                    self.images[square], (row * self.part, column * self.part))
+                    self.imageset[square], (row * self.part, column * self.part))
 
         pygame.display.flip()
-
-    def game_done(self):
-        for column in range(self.height):
-            for row in range(self.width):
-                if self.map[column][row] in [2, 6]:
-                    return False
-        return True
 
     def loop(self):
         while True:
