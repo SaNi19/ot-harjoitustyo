@@ -2,7 +2,6 @@ import sys
 import pygame
 
 
-
 class MySokoban:
     def __init__(self):
         pygame.init()
@@ -77,7 +76,7 @@ class MySokoban:
     def find(self):
         for column in range(self.height):
             for row in range(self.width):
-                if self.map[column][row] in [4,6]:
+                if self.map[column][row] in [4, 6]:
                     return (column, row)
 
     def display_game(self):
@@ -99,4 +98,3 @@ class MySokoban:
 
 if __name__ == "__main__":
     MySokoban()
-  
