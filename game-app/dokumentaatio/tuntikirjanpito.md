@@ -14,4 +14,6 @@
 | 9.4.  | 2   |pelin toiminnan testausta| 
 | 11.4. | 3   |koodin laatutarkistusta|
 | 12.4. | 2   |README:n ja gitignoren muokkausta|
-| yht.  | 28  |
+| 17.4. | 3   |Koodin laatutarkistusta ja arkkitehtuurikuva|
+| 18.4. | 3   |Testien aloitus|
+| yht.  | 34  |
