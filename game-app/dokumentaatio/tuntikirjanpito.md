@@ -16,5 +16,5 @@
 | 12.4. | 2   |README:n ja gitignoren muokkausta|
 | 17.4. | 3   |Koodin laatutarkistusta ja arkkitehtuurikuva|
 | 18.4. | 3   |Testien aloitus|
-| 23.4. | 6.  |Peliin lisätty askellaskuri ja näppäimistöohjeet|
+| 23.4. | 6   |Peliin lisätty askellaskuri ja näppäimistöohjeet|
 | yht.  | 40  |
