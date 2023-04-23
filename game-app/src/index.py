@@ -18,6 +18,8 @@ class MySokoban:
         gamemap_width = self.part * self.width
         self.sreen = pygame.display.set_mode(
             (gamemap_width, gamemap_height + self.part))
+        
+        self.fontti = pygame.font.SysFont("Corbel", 35)
 
         self.loop()
 
@@ -27,14 +29,17 @@ class MySokoban:
             self.imageset.append(pygame.image.load(name + ".png"))
 
     def game(self):
+        self.step = 0
         self.map = [[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
-                    [1, 4, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 1],
+                    [1, 4, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1],
                     [1, 0, 0, 3, 1, 0, 3, 0, 0, 3, 0, 1, 1, 0, 1, 1],
                     [1, 0, 0, 0, 1, 3, 1, 1, 3, 3, 0, 1, 2, 2, 2, 1],
                     [1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 2, 1],
                     [1, 0, 3, 0, 3, 1, 3, 0, 1, 1, 1, 1, 0, 0, 2, 1],
                     [1, 0, 1, 1, 0, 0, 0, 0, 0, 3, 0, 0, 2, 2, 2, 1],
                     [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]]
+        
+        
 
     def events(self):
         for command in pygame.event.get():
@@ -72,6 +77,7 @@ class MySokoban:
 
         self.map[old_player_y][old_player_x] -= 4
         self.map[new_player_y][new_player_x] += 4
+        self.step += 1
 
     def find(self):
         for column in range(self.height):
@@ -87,7 +93,11 @@ class MySokoban:
                 square = self.map[column][row]
                 self.sreen.blit(
                     self.imageset[square], (row * self.part, column * self.part))
-
+                
+        teksti = self.fontti.render("Step: " + str(self.step), True, (0, 0, 0))
+        self.sreen.blit(teksti, (25, self.height * self.part + 10))
+                
+    
         pygame.display.flip()
 
     def loop(self):
