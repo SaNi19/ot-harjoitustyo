@@ -2,6 +2,7 @@ import sys
 import pygame
 
 
+
 class MySokoban:
     def __init__(self):
         pygame.init()
@@ -18,8 +19,7 @@ class MySokoban:
         gamemap_width = self.part * self.width
         self.sreen = pygame.display.set_mode(
             (gamemap_width, gamemap_height + self.part))
-        
-        self.fontti = pygame.font.SysFont("Corbel", 35)
+        self.fontti = pygame.font.SysFont("Corbel", 30)
 
         self.loop()
 
@@ -38,8 +38,7 @@ class MySokoban:
                     [1, 0, 3, 0, 3, 1, 3, 0, 1, 1, 1, 1, 0, 0, 2, 1],
                     [1, 0, 1, 1, 0, 0, 0, 0, 0, 3, 0, 0, 2, 2, 2, 1],
                     [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]]
-        
-        
+
 
     def events(self):
         for command in pygame.event.get():
@@ -54,8 +53,11 @@ class MySokoban:
                     self.move(1, 0)
                 if command.key == pygame.K_ESCAPE:
                     sys.exit()
+                if command.key == pygame.K_F2:
+                    self.game()
             if command.type == pygame.QUIT:
                 sys.exit()
+              #pygame.display.update()
 
     def move(self, move_y, move_x):
         old_player_y, old_player_x = self.find()
@@ -91,13 +93,15 @@ class MySokoban:
         for column in range(self.height):
             for row in range(self.width):
                 square = self.map[column][row]
-                self.sreen.blit(
-                    self.imageset[square], (row * self.part, column * self.part))
-                
-        teksti = self.fontti.render("Step: " + str(self.step), True, (0, 0, 0))
-        self.sreen.blit(teksti, (25, self.height * self.part + 10))
-                
-    
+                self.sreen.blit(self.imageset[square], (row * self.part, column * self.part))
+        tekst = self.fontti.render("Step: " + str(self.step), True, (0, 0, 0))
+        self.sreen.blit(tekst, (25, self.height * self.part + 10))
+
+        tekst = self.fontti.render("New game: F2", True, (0, 0, 0))
+        self.sreen.blit(tekst, (330, self.height * self.part + 10))
+
+        tekst = self.fontti.render("Close: esc", True, (0, 0, 0))
+        self.sreen.blit(tekst, (680, self.height * self.part + 10))
         pygame.display.flip()
 
     def loop(self):
