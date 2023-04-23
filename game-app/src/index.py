@@ -3,6 +3,7 @@ import pygame
 
 
 
+
 class MySokoban:
     def __init__(self):
         pygame.init()
@@ -57,7 +58,6 @@ class MySokoban:
                     self.game()
             if command.type == pygame.QUIT:
                 sys.exit()
-              #pygame.display.update()
 
     def move(self, move_y, move_x):
         old_player_y, old_player_x = self.find()
