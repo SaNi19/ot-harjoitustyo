@@ -10,14 +10,11 @@ class MySokoban:
         pygame.init()
         pygame.display.set_caption("MySokoban")
         self.dirname = os.path.dirname(__file__)
-
         self.images()
         self.game()
-
         self.height = len(self.map)
         self.width = len(self.map[1])
         self.part = self.imageset[0].get_width()
-
         gamemap_height = self.part * self.height
         gamemap_width = self.part * self.width
         self.sreen = pygame.display.set_mode(
