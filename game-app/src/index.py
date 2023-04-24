@@ -1,4 +1,5 @@
 import sys
+import os
 import pygame
 
 
@@ -8,6 +9,7 @@ class MySokoban:
     def __init__(self):
         pygame.init()
         pygame.display.set_caption("MySokoban")
+        self.dirname = os.path.dirname(__file__)
 
         self.images()
         self.game()
@@ -27,7 +29,7 @@ class MySokoban:
     def images(self):
         self.imageset = []
         for name in ["floor", "wall", "place", "ball", "player", "end", "player2"]:
-            self.imageset.append(pygame.image.load(name + ".png"))
+            self.imageset.append(pygame.image.load(os.path.join(self.dirname, "images", name + ".png")))
 
     def game(self):
         self.step = 0
