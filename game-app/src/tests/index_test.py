@@ -1,6 +1,7 @@
 import unittest
 import sys
 import pygame
+from index import MySokoban
 
 
     
@@ -15,10 +16,16 @@ map = [[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
                     [1, 0, 1, 1, 0, 0, 0, 0, 0, 3, 0, 0, 2, 2, 2, 1],
                     [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]]
 
-   
+part = 50  
    
 
 class TestMySokoban(unittest.TestCase):
+    def setUp(self):
+        self.map =MySokoban(map, part)
+
+    def assert_coordinates_equal(self,move_x,move_y):
+        self.assertEqual(move_x)
+        self.assertEqual(move_y)
    
     def test_imageset_size_is_right(self):
         length = len(imageset)
@@ -37,8 +44,8 @@ class TestMySokoban(unittest.TestCase):
         ansver =str(waidh)
 
         self.assertEqual(ansver, "16")
-
     
+
         
 
 
