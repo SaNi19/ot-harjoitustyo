@@ -12,4 +12,5 @@
 
 - Ohjelmaan on lisätty askellaskuri
 - Ohjelmaan on lisätty näppäimistöohjeet uudelle pelille
-- Ohjelmaan on liätty näppäimistöohje pelin sulkemiseen
+- Ohjelmaan on lisätty näppäimistöohje pelin sulkemiseen
+- Kuvat on siirretty omaan kansioon
