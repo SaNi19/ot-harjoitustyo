@@ -14,7 +14,7 @@ MySokoban on pelisovellus, jota voi pelata yksi pelaaja kerrallaan. Peliä pelat
 
 - [Arkkitehturi](https://github.com/SaNi19/ot-harjoitustyo/blob/master/game-app/dokumentaatio/arkkitehtuuri.md)
 
-# Käyttöohje
+## Käyttöohje
 Laataa ohjelma [releasen](https://github.com/SaNi19/ot-harjoitustyo/releases) lähdekoodi.
 ## Ohjelman käynnistäminen
 
