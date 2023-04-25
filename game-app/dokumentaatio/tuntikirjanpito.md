@@ -18,4 +18,5 @@
 | 18.4. | 3   |Testien aloitus|
 | 23.4. | 6   |Peliin lisätty askellaskuri ja näppäimistöohjeet|
 | 24.4. | 3   |Kuvat siirretty omaan kansioon
-| yht.  | 43  |
+| 25.4. | 3.  |Ohjelman silmukkarakenteen sekvenssikaavion ja releasen toteutus
+| yht.  | 46  |
