@@ -17,6 +17,9 @@ MySokoban on pelisovellus, jota voi pelata yksi pelaaja kerrallaan. Peliä pelat
 
 ## Komentorivitoimintoja
 
+### Ohjelma alustetaan komennolla:
+```poetry install
+
 ### Ohjelman voi käynnistää komennolla:
 ```poetry run invoke start```
 
