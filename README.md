@@ -21,14 +21,18 @@ Laataa ohjelma [releasen](https://github.com/SaNi19/ot-harjoitustyo/releases) l�
 ### Ohjelma alustetaan komennolla:
 ```poetry install```
 
-### Ohjelman voi k채ynnist채채 komennolla:
+### Ohjelma k채ynnistet채채n komennolla:
 ```poetry run invoke start```
 
-### Ohjelman testit voi suorittaa komennolla.
+### Ohjelman testit suoritetaan komennlla:
+```poetry run invoke test`
+
+### Ohjelman testitkattavuus ker채t채채n komennolla:
 ```poetry run invoke coverage```
 
 ### Ohjelman testikattavuusraportin voi muodostaa komennolle:
 ```poetry run invoke coverage_report```
+- Komento luo HTML-muotoinen raportin projektin juurihakemistossa sijaitsevaan **htmlcov**-hakemistoon.
 
 ### Koodin laadun voi tarkistaa komennolla:
 ```poetry run invoke lint```
