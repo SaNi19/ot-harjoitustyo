@@ -18,6 +18,7 @@ class MySokoban:
         self.sreen = pygame.display.set_mode(
             (gamemap_width, gamemap_height + self.part))
         self.fontti = pygame.font.SysFont("Corbel", 30)
+        self.answer = "y"
 
         self.loop()
 
@@ -104,12 +105,12 @@ class MySokoban:
         self.sreen.blit(tekst, (680, self.height * self.part + 10))
 
         if self.game_end():
-            tekst = self.fontti.render("Game ower! ", True, (255, 0, 0))
-            teksti_x = self.part * self.width / 2 - tekst.get_width() / 2
-            teksti_y = self.part * self.height / 2 - tekst.get_height() / 2
-            pygame.draw.rect(self.sreen, (0, 0, 0), (teksti_x,
-                             teksti_y, tekst.get_width(), tekst.get_height()))
-            self.sreen.blit(tekst, (teksti_x, teksti_y))
+            tekst = self.fontti.render("Game ower! All right!", True, (255, 0, 0))
+            tekst_x = self.part * self.width / 2 - tekst.get_width() / 2
+            tekst_y = self.part * self.height / 2 - tekst.get_height() / 2
+            pygame.draw.rect(self.sreen, (0, 0, 0), (tekst_x,
+                             tekst_y, tekst.get_width(), tekst.get_height()))
+            self.sreen.blit(tekst, (tekst_x, tekst_y))
 
         pygame.display.flip()
 

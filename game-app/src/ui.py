@@ -81,5 +81,5 @@ class UI:
         self.__filemanager.save_result(self.__results_list.all_results())
 
 
-app = UI()
-app.run()
+ui = UI()
+ui.run()
