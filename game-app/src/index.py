@@ -3,8 +3,6 @@ import os
 import pygame
 
 
-
-
 class MySokoban:
     def __init__(self):
         pygame.init()
@@ -26,7 +24,8 @@ class MySokoban:
     def images(self):
         self.imageset = []
         for name in ["floor", "wall", "place", "ball", "player", "end", "player2"]:
-            self.imageset.append(pygame.image.load(os.path.join(self.dirname, "images", name + ".png")))
+            self.imageset.append(pygame.image.load(
+                os.path.join(self.dirname, "images", name + ".png")))
 
     def game(self):
         self.step = 0
@@ -38,7 +37,6 @@ class MySokoban:
                     [1, 0, 3, 0, 3, 1, 3, 0, 1, 1, 1, 1, 0, 0, 2, 1],
                     [1, 0, 1, 1, 0, 0, 0, 0, 0, 3, 0, 0, 2, 2, 2, 1],
                     [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]]
-
 
     def events(self):
         for command in pygame.event.get():
@@ -94,7 +92,8 @@ class MySokoban:
         for column in range(self.height):
             for row in range(self.width):
                 square = self.map[column][row]
-                self.sreen.blit(self.imageset[square], (row * self.part, column * self.part))
+                self.sreen.blit(
+                    self.imageset[square], (row * self.part, column * self.part))
         tekst = self.fontti.render("Step: " + str(self.step), True, (0, 0, 0))
         self.sreen.blit(tekst, (25, self.height * self.part + 10))
 
@@ -108,20 +107,18 @@ class MySokoban:
             tekst = self.fontti.render("Game ower! ", True, (255, 0, 0))
             teksti_x = self.part * self.width / 2 - tekst.get_width() / 2
             teksti_y = self.part * self.height / 2 - tekst.get_height() / 2
-            pygame.draw.rect(self.sreen, (0, 0, 0), (teksti_x, teksti_y, tekst.get_width(), tekst.get_height()))
+            pygame.draw.rect(self.sreen, (0, 0, 0), (teksti_x,
+                             teksti_y, tekst.get_width(), tekst.get_height()))
             self.sreen.blit(tekst, (teksti_x, teksti_y))
-        
+
         pygame.display.flip()
 
-        
-
-
     def game_end(self):
-        for y in range(self.height):
-            for x in range(self.width):
-                if self.map[y][x] in [2,6]:
+        for column in range(self.height):
+            for row in range(self.width):
+                if self.map[column][row] in [2, 6]:
                     return False
-                
+
         return True
 
     def loop(self):

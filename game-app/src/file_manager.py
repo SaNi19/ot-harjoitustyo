@@ -1,6 +1,7 @@
 class FileManager():
     """Luokka, joka vastaa tiedostonhallinnasta.
     """
+
     def __init__(self, data):
         """Luokan konstruktori, joka luo yhteyden tiedostoon data.txt.
 

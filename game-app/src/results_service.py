@@ -1,6 +1,7 @@
 class ResultsService:
     """Luokka, joka vastaa tiedon tallentamisesta ja etsimisestä.
     """
+
     def __init__(self):
         """Luokan konstruktori, joka luo pelaajalistan.
         """
@@ -42,4 +43,3 @@ class ResultsService:
             List: Vieruslistaesitys.
         """
         return self.__players
-    

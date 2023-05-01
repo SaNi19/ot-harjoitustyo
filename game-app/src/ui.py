@@ -5,6 +5,7 @@ from results_service import ResultsService
 class UI:
     """Luokka, joka vastaa ohjelman käyttöliittymästä
     """
+
     def __init__(self):
         """Luokan konstruktori, joka luo tuloslistan ja tiedostonhallinnan.
         """
@@ -14,7 +15,6 @@ class UI:
         for name, results in self.__filemanager.load().items():
             for steps in results:
                 self.__results_list.add_result(name, steps)
-
 
     def help(self):
         """Näyttää käyttäjälle ohjelman valikkotoiminnot.
@@ -41,7 +41,6 @@ class UI:
                 self.get_result()
             if command == "3":
                 self.all_result
-
 
     def add_game_result(self):
         """Kysyy käyttäjän nimen ja tuloksen, ja tallentaa tuloksen tiedostoon.
@@ -80,7 +79,6 @@ class UI:
         """Tallentaa kaikki tulokset ja sulkee ohjelman.
         """
         self.__filemanager.save_result(self.__results_list.all_results())
-
 
 
 app = UI()
