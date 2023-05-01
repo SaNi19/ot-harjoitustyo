@@ -14,3 +14,10 @@
 - Ohjelmaan on lisätty näppäimistöohjeet uudelle pelille
 - Ohjelmaan on lisätty näppäimistöohje pelin sulkemiseen
 - Kuvat on siirretty omaan kansioon
+
+## Viikko 6 ##
+
+- Ohjelmaan on lisätty pelin tarkistusmetodi pelin läpäisystä
+- Ohjelmaan on lisätty pelin läpäisystä kertova viesti "Game ower!"
+- Ohjelmaan on lisätty tuloksen tallentamista varten luokat UI, FileManager ja ResultsServices (mutta tallennus en saanut vielä toimimaan)
+
