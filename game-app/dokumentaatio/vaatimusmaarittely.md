@@ -11,7 +11,7 @@ Alkuvaiheessa sovelluksessa on käyttöliittymänä pelinäkymä. Myöhemmin sov
 - Käyttäjä voi pelata peliä ✓
 - Käyttäjä voi sulkea pelin ennen pelin päättymisä ✓
 - Käyttäjä voi seurata pelin siirtojen määrää ✓
-- Peli päättyy, kun kaikki esineet ovat varastossa
+- Peli päättyy, kun kaikki esineet ovat varastossa ✓
 - Pelaaja voi käynnistää uuden pelin tai sulkea sovelluksen ✓
 
 ## Sovelluksen jatkokehitys
