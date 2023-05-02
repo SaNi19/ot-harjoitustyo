@@ -1,5 +1,7 @@
 ## Luokkakaavio ##
-![Luokkakaavio](https://github.com/SaNi19/ot-harjoitustyo/blob/master/game-app/dokumentaatio/arkkitehtuuri.png)
+Sovelluksen pääluokat ovat UI ja MySokoban.
+
+![Luokkakaavio](https://github.com/SaNi19/ot-harjoitustyo/blob/master/game-app/UI-MySokoban.png)
 
 ## MySokoban-pelin pelisilmukan toiminta ##
 Kun ohjelma käynnistetään, *main*-metodi kutsuu luokkaa MySokobaan. Pelin alustuksen jälkeen peli siirtyy *loop*-silmukkaa ja toimii seuraavalla tavalla:
