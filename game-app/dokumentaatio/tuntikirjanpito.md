@@ -21,4 +21,5 @@
 | 25.4. | 3   |Ohjelman silmukkarakenteen sekvenssikaavion ja releasen toteutus
 | 30.4. | 5   |Pelaajan pelitulosten tallentamisen toteutusta
 | 1.5.  | 6   |Pelin päättymisen tarkistuksen ja tulostuksen toteutus
-| yht.  | 57  |
+| 2.5.  | 3.  |Koodin korjausta ja tiedon tallennuksen suunnittelua ja testausta
+| yht.  | 60  |
