@@ -130,3 +130,4 @@ class MySokoban:
 
 if __name__ == "__main__":
     MySokoban()
+    

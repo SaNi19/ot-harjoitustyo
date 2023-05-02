@@ -4,7 +4,6 @@ class FileManager():
 
     def __init__(self, data):
         """Luokan konstruktori, joka luo yhteyden tiedostoon data.txt.
-
         Args:
             data (txt): data.txt
         """
@@ -12,7 +11,6 @@ class FileManager():
 
     def load(self):
         """Lukee tiedostoa.
-
         Returns:
             List: Palaajat ja tulokset.
         """
@@ -27,7 +25,6 @@ class FileManager():
 
     def save_result(self, data: dict):
         """Kirjoittaa tiedostoon.
-
         Args:
             data (dict): Pelaajan nimi ja tulos.
         """

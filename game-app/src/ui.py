@@ -64,7 +64,6 @@ class UI:
     def all_result(self):
         """Tulostaa listan kaikista pelaajista ja pelaajien tuloksista.
         Jos tuloksia ei löydy, palauttaa viestin: "No results yet".
-
         Args:
             List: Pelaajat ja tulokset
         """
