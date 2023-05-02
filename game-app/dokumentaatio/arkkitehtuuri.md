@@ -8,7 +8,9 @@ Kun ohjelma käynnistetään, *main*-metodi kutsuu luokkaa MySokobaan. Pelin alu
 - *loop*-metodi kutsuu *events*-metodia
 - *events* kutsuu *event.get*-metodia
 - *even.get* palauttaa pelaajan painaman näppäimen arvon *events*-metodille
-- *events* kutsuu *move*-metodia *even.get*-metodin palauttamilla y- ja x-arvoilla
-- *move*-metodi kutsuu *find*-metodia, joko palauttaa rivin ja sarakkeen, jossa pelihahmo sijaitsee pelilaudalla
-- *move*-metodi palauttaa arvon *events*-metodille
+- *events* kutsuu *move*-metodia *even.get*-metodin palauttamilla nuolinäppäimen y- ja x-arvoilla
+- *move*-metodi kutsuu *game_end*-metodia, joka palauttaa *True*, jos peli on valmis, muuten *False*
+- jos vastaus on *False*, *move*-metodi kutsuu *find*-metodia, joko palauttaa rivin ja sarakkeen, jossa pelihahmo sijaitsee pelilaudalla
+- *move*-metodi tarkistaa, voiko pelihahmo liikkua annettuun suuntaan
+- jos liikkuminen on sallittu, *move*-metodi palauttaa uuden arvon *events*-metodille, muutoin arvo pysyy samana
 - ohjelma palaa takaisin *loop*-metodiin, jossa seuraavana on vuorossa *display_game*-metodin suoritus
