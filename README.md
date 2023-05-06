@@ -32,10 +32,7 @@ Ohjelman käynnistys avaa näytölle pelilaudan, jossa peliä pelataan nuolinäp
 ### Ohjelman testit suoritetaan komennlla:
 ```poetry run invoke test```
 
-### Ohjelman testitkattavuus kerätään komennolla:
-```poetry run invoke coverage```
-
-### Ohjelman testikattavuusraportin voi muodostaa testikattavuuden keräämisen jälkeen komennolle:
+### Ohjelman testikattavuusraportin voi muodostaa komennolla:
 ```poetry run invoke coverage_report```
 - Komento luo HTML-muotoinen raportin projektin juurihakemistossa sijaitsevaan **htmlcov**-hakemistoon.
 
