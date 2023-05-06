@@ -15,7 +15,7 @@ MySokoban on pelisovellus, jota voi pelata yksi pelaaja kerrallaan. Peliä pelat
 - [Arkkitehturi](https://github.com/SaNi19/ot-harjoitustyo/blob/master/game-app/dokumentaatio/arkkitehtuuri.md)
 
 ## Käyttöohje
-Laataa ohjelman [releasen](https://github.com/SaNi19/ot-harjoitustyo/releases/tag/Viikko6) lähdekoodi.
+Laataa ohjelman [releasen](https://github.com/SaNi19/ot-harjoitustyo/releases/tag/Viikko6) lähdekoodi ja siirry kansioon **Game-app.**
 ## Ohjelman käynnistäminen
 
 ### Ohjelma alustetaan komennolla:
@@ -30,7 +30,7 @@ Ohjelman käynnistys avaa näytölle pelilaudan, jossa peliä pelataan nuolinäp
 ![MySokoban](https://github.com/SaNi19/ot-harjoitustyo/blob/master/MySokoban.png)
 
 ### Ohjelman testit suoritetaan komennlla:
-```poetry run invoke test`
+```poetry run invoke test```
 
 ### Ohjelman testitkattavuus kerätään komennolla:
 ```poetry run invoke coverage```
