@@ -18,6 +18,7 @@ class UI:
         print("1 add result")
         print("2 find result")
         print("3 best result")
+        print("4 start game")
 
     def run(self):
         self.help()
