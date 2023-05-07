@@ -19,7 +19,9 @@ Sovellusta voidaan jatkokehittää esimerkiksi lisäämällä peliin kirjautumis
 - Käyttäjä voi luoda pelaajatunnuksen
 - Käyttäjä voi kirjautua peliin
 - Käyttäjä voi valita pelin useista eri vaihtoehdoista
-- Käyttäjän pelit tallennetaan tietokantaan tai tiedostoon
+- Käyttäjän voi tallentaa nimen ja pelituloksen tietokantaan tai tiedostoon ✓
+- Käyttäjä voi hakea pelituloksen tietokannasta ✓
+- Käyttäjä voi hakea parhaan pelituloksen tietokannasta ✓
 - Käytäjä näkee uudelleen kirjautuessa oman pelaamisen tulokset
 - Käyttäjä voi kirjautua ulos sovelluksesta
 
