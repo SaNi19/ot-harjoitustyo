@@ -8,6 +8,7 @@ class MySokoban:
         pygame.init()
         pygame.display.set_caption("MySokoban")
         self.dirname = os.path.dirname(__file__)
+    
 
         self.images()
         self.game()
@@ -52,7 +53,7 @@ class MySokoban:
                 if command.key == pygame.K_DOWN:
                     self.move(1, 0)
                 if command.key == pygame.K_ESCAPE:
-                    sys.exit()
+                    self.save_result_and_close()
                 if command.key == pygame.K_F2:
                     self.game()
             if command.type == pygame.QUIT:
