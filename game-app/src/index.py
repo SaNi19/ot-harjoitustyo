@@ -57,11 +57,10 @@ class MySokoban:
             if command.type == pygame.QUIT:
                 sys.exit()
 
-
     def move(self, move_y, move_x):
         if self.game_end():
             return
-        
+
         old_player_y, old_player_x = self.find()
         new_player_y = old_player_y + move_y
         new_player_x = old_player_x + move_x
@@ -106,9 +105,9 @@ class MySokoban:
         tekst = self.fontti.render("Close: esc", True, (0, 0, 0))
         self.sreen.blit(tekst, (680, self.height * self.part + 10))
 
-
         if self.game_end():
-            tekst = self.fontti.render("Game over! All right!", True, (255, 0, 0))
+            tekst = self.fontti.render(
+                "Game over! All right!", True, (255, 0, 0))
             tekst_x = self.part * self.width / 2 - tekst.get_width() / 2
             tekst_y = self.part * self.height / 2 - tekst.get_height() / 2
             pygame.draw.rect(self.sreen, (0, 0, 0), (tekst_x,
@@ -133,4 +132,3 @@ class MySokoban:
 
 if __name__ == "__main__":
     MySokoban()
-    
