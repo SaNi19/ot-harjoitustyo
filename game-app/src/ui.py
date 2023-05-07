@@ -27,7 +27,7 @@ class UI:
             print("")
             command = input("commands: ")
             if command == "0":
-                self.end_app()
+                break
             elif command == "1":
                 self.add_game_result()
             elif command == "2":
@@ -61,9 +61,6 @@ class UI:
 
     def start(self):
         MySokoban()
-
-    def end_app(self):
-        return None
 
 
 app = UI()

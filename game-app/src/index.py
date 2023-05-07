@@ -8,8 +8,10 @@ class MySokoban:
         pygame.init()
         pygame.display.set_caption("MySokoban")
         self.dirname = os.path.dirname(__file__)
+
         self.images()
         self.game()
+
         self.height = len(self.map)
         self.width = len(self.map[1])
         self.part = self.imageset[0].get_width()
@@ -18,7 +20,6 @@ class MySokoban:
         self.sreen = pygame.display.set_mode(
             (gamemap_width, gamemap_height + self.part))
         self.fontti = pygame.font.SysFont("Corbel", 30)
-        self.answer = "y"
 
         self.loop()
 
