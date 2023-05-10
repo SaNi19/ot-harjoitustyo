@@ -25,7 +25,7 @@ Peli avautuu tekstikäyttöliittymään, jossa käyttäjä voi tallentaa oman ni
 Sovellusta voidaan jatkokehittää esimerkiksi lisäämällä peliin kirjautumistoiminto ja uusia pelilautoja.
 - Käyttäjä voi luoda pelaajatunnuksen
 - Käyttäjä voi kirjautua peliin
-- Käyttäjä voi valita pelin useista eri vaihtoehdoista
+- Käyttäjä voi valita pelin vaativuustasoltaan erilaisista pelivaihtoehdoista
 - Käytäjä näkee uudelleen kirjautuessa oman pelaamisen tulokset
 - Käyttäjä voi kirjautua ulos sovelluksesta
 
