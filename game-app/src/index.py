@@ -1,14 +1,20 @@
 import sys
 import os
+import sqlite3
 import pygame
+from game_services import GameServices
+from move_player import MovePlayer
 
 
 class MySokoban:
     def __init__(self):
+        self.self = self
         pygame.init()
         pygame.display.set_caption("MySokoban")
         self.dirname = os.path.dirname(__file__)
-    
+        self.data = sqlite3.connect("resultlist.db")
+        self.move_player = MovePlayer
+        self.game_services = GameServices
 
         self.images()
         self.game()
@@ -20,7 +26,9 @@ class MySokoban:
         gamemap_width = self.part * self.width
         self.sreen = pygame.display.set_mode(
             (gamemap_width, gamemap_height + self.part))
-        self.fontti = pygame.font.SysFont("Corbel", 30)
+        self.font1 = pygame.font.SysFont("Corbel", 25)
+        self.font2 = pygame.font.SysFont("Corbel", 60)
+        self.steps = 0
 
         self.loop()
 
@@ -41,48 +49,40 @@ class MySokoban:
                     [1, 0, 1, 1, 0, 0, 0, 0, 0, 3, 0, 0, 2, 2, 2, 1],
                     [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]]
 
+        self.map1 = [[1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+                     [1, 4, 1, 1, 0, 0, 0, 0, 0, 1],
+                     [1, 0, 0, 3, 0, 1, 1, 0, 1, 1],
+                     [1, 0, 3, 0, 0, 1, 0, 0, 0, 1],
+                     [1, 0, 0, 0, 0, 0, 2, 2, 2, 1],
+                     [1, 0, 3, 0, 1, 1, 0, 0, 0, 1],
+                     [1, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+                     [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]]
+
     def events(self):
         for command in pygame.event.get():
             if command.type == pygame.KEYDOWN:
                 if command.key == pygame.K_LEFT:
-                    self.move(0, -1)
+                    self.move_player.move(self, 0, -1)
                 if command.key == pygame.K_RIGHT:
-                    self.move(0, 1)
+                    self.move_player.move(self, 0, 1)
                 if command.key == pygame.K_UP:
-                    self.move(-1, 0)
+                    self.move_player.move(self, -1, 0)
                 if command.key == pygame.K_DOWN:
-                    self.move(1, 0)
+                    self.move_player.move(self, 1, 0)
                 if command.key == pygame.K_ESCAPE:
-                    self.save_result_and_close()
+                    sys.exit()
                 if command.key == pygame.K_F2:
                     self.game()
             if command.type == pygame.QUIT:
                 sys.exit()
+            if command.type == pygame.MOUSEBUTTONDOWN:
+                if self.quit_button.collidepoint(command.pos):
+                    sys.exit()
+                if self.new_game_button.collidepoint(command.pos):
+                    self.game()
+                if self.save_your_result_button.collidepoint(command.pos):
 
-    def move(self, move_y, move_x):
-        if self.game_end():
-            return
-
-        old_player_y, old_player_x = self.find()
-        new_player_y = old_player_y + move_y
-        new_player_x = old_player_x + move_x
-
-        if self.map[new_player_y][new_player_x] == 1:
-            return
-
-        if self.map[new_player_y][new_player_x] in [3, 5]:
-            new_ball_y = new_player_y + move_y
-            new_ball_x = new_player_x + move_x
-
-            if self.map[new_ball_y][new_ball_x] in [1, 3, 5]:
-                return
-
-            self.map[new_player_y][new_player_x] -= 3
-            self.map[new_ball_y][new_ball_x] += 3
-
-        self.map[old_player_y][old_player_x] -= 4
-        self.map[new_player_y][new_player_x] += 4
-        self.step += 1
+                    self.data.add_game_result(self.step)
 
     def find(self):
         for column in range(self.height):
@@ -92,23 +92,47 @@ class MySokoban:
 
     def display_game(self):
         self.sreen.fill((100, 0, 255))
-
         for column in range(self.height):
             for row in range(self.width):
                 square = self.map[column][row]
                 self.sreen.blit(
                     self.imageset[square], (row * self.part, column * self.part))
-        tekst = self.fontti.render("Step: " + str(self.step), True, (0, 0, 0))
+
+        tekst = self.font1.render("Step: " + str(self.step), True, (0, 0, 0))
         self.sreen.blit(tekst, (25, self.height * self.part + 10))
 
-        tekst = self.fontti.render("New game: F2", True, (0, 0, 0))
-        self.sreen.blit(tekst, (330, self.height * self.part + 10))
+        tekst = self.font1.render(
+            "Add name: " + str(self.step), True, (0, 0, 0))
+        self.sreen.blit(tekst, (100, self.height * self.part + 10))
 
-        tekst = self.fontti.render("Close: esc", True, (0, 0, 0))
-        self.sreen.blit(tekst, (680, self.height * self.part + 10))
+        self.save_result_button_text = self.font1.render(
+            'Save result', True, 'white')
+        self.save_your_result_button = pygame.Rect(
+            400, self.height * self.part + 10, 100, 30)
+
+        pygame.draw.rect(self.sreen, (200, 0, 0), self.save_your_result_button)
+        self.sreen.blit(self.save_result_button_text,
+                        (self.save_your_result_button.x + 5, self.save_your_result_button.y+5))
+
+        self.new_game_button_text = self.font1.render(
+            'New game', True, 'white')
+        self.new_game_button = pygame.Rect(
+            550, self.height * self.part + 10, 100, 30)
+
+        pygame.draw.rect(self.sreen, (200, 0, 0), self.new_game_button)
+        self.sreen.blit(self.new_game_button_text,
+                        (self.new_game_button.x + 5, self.new_game_button.y+5))
+
+        self.quit_button_text = self.font1.render('Quit', True, 'white')
+        self.quit_button = pygame.Rect(
+            700, self.height * self.part + 10, 80, 30)
+
+        pygame.draw.rect(self.sreen, (200, 0, 0), self.quit_button)
+        self.sreen.blit(self.quit_button_text,
+                        (self.quit_button.x + 5, self.quit_button.y+5))
 
         if self.game_end():
-            tekst = self.fontti.render(
+            tekst = self.font1.render(
                 "Game over! All right!", True, (255, 0, 0))
             tekst_x = self.part * self.width / 2 - tekst.get_width() / 2
             tekst_y = self.part * self.height / 2 - tekst.get_height() / 2
