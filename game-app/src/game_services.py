@@ -33,7 +33,7 @@ class GameServices:
         """
         result = game_result
         self.data.execute(
-            "INSERT INTO Resultlist (result) VALUES (?)", [result])
+            "INSERT INTO Resultlist (result)VALUES(?)", [result])
         """Lisää pelin askelten määrän tietokantaan.
         """
 
@@ -48,7 +48,7 @@ class GameServices:
         best = self.data.execute(
             "SELECT MIN(result) FROM Resultlist").fetchone()
         if best:
-            print("Best result now is ", str(best))
+            return best[0]
         else:
-            print("No results yet")
+            return "No results yet"
 

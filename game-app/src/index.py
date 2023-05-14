@@ -78,7 +78,6 @@ class MySokoban:
             Args:
             step: Askeleet alussa 0.
         """
-
     def events(self):
         """Tapahtumankäsittelijä.
         """
