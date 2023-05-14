@@ -15,6 +15,7 @@ class MySokoban:
         self.data = sqlite3.connect("resultlist.db")
         self.move_player = MovePlayer
         self.game_services = GameServices
+        self.best = self.game_services.best_result(self)
 
         self.images()
         self.game()
@@ -80,9 +81,6 @@ class MySokoban:
                     sys.exit()
                 if self.new_game_button.collidepoint(command.pos):
                     self.game()
-                if self.save_your_result_button.collidepoint(command.pos):
-
-                    self.data.add_game_result(self.step)
 
     def find(self):
         for column in range(self.height):
@@ -102,17 +100,8 @@ class MySokoban:
         self.sreen.blit(tekst, (25, self.height * self.part + 10))
 
         tekst = self.font1.render(
-            "Add name: " + str(self.step), True, (0, 0, 0))
-        self.sreen.blit(tekst, (100, self.height * self.part + 10))
-
-        self.save_result_button_text = self.font1.render(
-            'Save result', True, 'white')
-        self.save_your_result_button = pygame.Rect(
-            400, self.height * self.part + 10, 100, 30)
-
-        pygame.draw.rect(self.sreen, (200, 0, 0), self.save_your_result_button)
-        self.sreen.blit(self.save_result_button_text,
-                        (self.save_your_result_button.x + 5, self.save_your_result_button.y+5))
+            "Best result: " + str(self.best), True, (0, 0, 0))
+        self.sreen.blit(tekst, (150, self.height * self.part + 10))
 
         self.new_game_button_text = self.font1.render(
             'New game', True, 'white')
@@ -132,6 +121,8 @@ class MySokoban:
                         (self.quit_button.x + 5, self.quit_button.y+5))
 
         if self.game_end():
+            result = self.step
+            self.game_services.add_game_result(self, result)
             tekst = self.font1.render(
                 "Game over! All right!", True, (255, 0, 0))
             tekst_x = self.part * self.width / 2 - tekst.get_width() / 2

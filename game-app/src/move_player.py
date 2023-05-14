@@ -6,16 +6,6 @@ class MovePlayer:
 
     def __init__(self, map, height, width, step, move_y, move_x, find, game_end):
         """Luokan konstruktori, joka luo pelihahmolle ja pallolle uuden sijainnin.
-
-        Args:
-            map (_type_): _description_
-            height (_type_): _description_
-            width (_type_): _description_
-            step (_type_): _description_
-            move_y (_type_): _description_
-            move_x (_type_): _description_
-            find (_type_): _description_
-            game_end (_type_): _description_
         """
         self.self = self
         self.map = map

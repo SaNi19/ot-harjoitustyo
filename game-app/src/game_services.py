@@ -20,21 +20,19 @@ class GameServices:
         """
         try:
             self.data.execute(
-                "CREATE TABLE Resultlist (id INTEGER PRIMARY KEY, name TEXT, result INTEGER)")
+                "CREATE TABLE Resultlist (id INTEGER PRIMARY KEY, result INTEGER)")
         except:
             print("Table is created")
 
-    def add_game_result(self, user_name, game_result):
+    def add_game_result(self, game_result):
         """Lisäää pelaajan nimen ja pelissä käytetyt askeleet tietokantaan.
 
         Args:
-            user_name: Käyttäjän nimi.
             game_result: Pelissä käytetyt askeleet.
         """
-        name = user_name
         result = game_result
         self.data.execute(
-            "INSERT INTO Resultlist (name, result) VALUES (?,?)", [name, result])
+            "INSERT INTO Resultlist (result) VALUES (?)", [result])
 
     def best_result(self):
         """Etsii pelattujen pelien tuloksen, jossa on käytetty vähiten askeleita.
@@ -45,6 +43,6 @@ class GameServices:
         best = self.data.execute(
             "SELECT MIN(result) FROM Resultlist").fetchone()
         if best:
-            print("Best result now is ", best)
+            print("Best result now is ", str(best))
         else:
             print("No results yet")
