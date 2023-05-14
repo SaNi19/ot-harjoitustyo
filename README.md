@@ -29,6 +29,10 @@ Ohjelman käynnistys avaa näytölle pelilaudan, jossa peliä pelataan nuolinäp
 ### Pelin aloitusnäkymä
 ![MySokoban](https://github.com/SaNi19/ot-harjoitustyo/blob/master/MySokoban_star.png)
 
+### Pelin päättymisnäkymä
+![MySokoban](https://github.com/SaNi19/ot-harjoitustyo/blob/master/MySokoban_end.png)
+
+
 ### Ohjelman testit suoritetaan komennlla:
 ```poetry run invoke test```
 
