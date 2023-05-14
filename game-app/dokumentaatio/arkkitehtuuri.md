@@ -1,7 +1,7 @@
 ## Luokkakaavio ##
-Sovelluksen pääluokat ovat UI ja MySokoban.
+Sovelluksen luokkia ovat **MySokoban, GameServices ja MovePlayer**. Lisäksi sovelluksessa on **images**-kansio kuville ja sqlite-tietokantaa käyttävä **resultlist.db**. 
 
-![Luokkakaavio](https://github.com/SaNi19/ot-harjoitustyo/blob/master/game-app/UI-MySokoban.png)
+![Luokkakaavio](https://github.com/SaNi19/ot-harjoitustyo/blob/master/Luokkakaavio.png)
 
 ## MySokoban-pelin pelisilmukan toiminta ##
 Kun ohjelma käynnistetään, *main*-metodi kutsuu luokkaa MySokobaan. Pelin alustuksen jälkeen peli siirtyy *loop*-silmukkaa ja toimii seuraavalla tavalla:
