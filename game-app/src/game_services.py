@@ -51,4 +51,3 @@ class GameServices:
             return best[0]
         else:
             return "No results yet"
-

@@ -24,7 +24,7 @@ gamemap_width = part * width
 class TestMySokoban(unittest.TestCase):
     def setUp(self):
         self.map = map
-        self.old_player_y, self.old_player_x = (1,1)
+        self.old_player_y, self.old_player_x = (1, 1)
 
     def game_end(self):
         """Tarkistaa, onko palloja vielä pelilaudalla.
@@ -40,11 +40,8 @@ class TestMySokoban(unittest.TestCase):
 
         return True
 
-
-    
     def test_player_can_move(self):
-        
+
         ansver = MySokoban.find(self)
 
         self.assertTrue(str(ansver), "1,1")
-

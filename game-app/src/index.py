@@ -20,6 +20,12 @@ class MySokoban:
         self.move_player = MovePlayer
         self.game_services = GameServices
         self.best = self.game_services.best_result(self)
+        self.new_game_button = None
+        self.new_game_button_text = ""
+        self.quit_button = None
+        self.quit_button_text = ""
+
+        self.game_services.add_game_result(self, 100000)
 
         self.images()
         """Kutsutaan metodi, joka asettaa image-kansion kuvat taulukkoon.
@@ -78,6 +84,7 @@ class MySokoban:
             Args:
             step: Askeleet alussa 0.
         """
+
     def events(self):
         """Tapahtumankäsittelijä.
         """
