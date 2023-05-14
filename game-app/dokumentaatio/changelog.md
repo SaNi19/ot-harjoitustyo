@@ -25,7 +25,10 @@
 
 - Ohjelmasta on poistettu luokat FileManager ja ResultServices
 - Ohjelmaan on lisätty sqlite tietokanta
-- Luokaan UI lisätty toiminto tiedon lukemiseen tietokannasta
-- Luokkaan UI lisätty toiminto tiedon tallentamiseen tietokantaan
-- Luokkaan UI lisätty toiminto pelin käynnistämiseen 
+- Ohjelmaan on lisätty luokka MovePlayer, joka huolehtii pelihahmon ja pallon liikkumisesta 
+- Ohjelmaan on lisätty luokaan GameServices ,jonka tehtävä on tallentaa pelitulos sqlite-tietokantaan
+- Luokkaan GameServices on lisätty toiminto tiedon ukemiseen tietokannasta
+- Käyttöliittymään on lisätty painikkeet uuden pelin käynistämiselle ja pelin sulkemiselle
+- Käyttöliittymään on lisätty parhaan pelituloksen tulostava kenttä
+
 
