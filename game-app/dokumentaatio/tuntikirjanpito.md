@@ -26,9 +26,9 @@
 | 4.5.  | 2   |tiedon tallennuksen toteutusta
 | 6.5.  | 5   |sqliten lisäys ohjelmaan
 | 7.5.  | 3   |koodin laadun korjausta
-| 10.5.  | 3  |koodin laadun korjausta
-| 11.5.  | 2  |koodin laadun korjausta
-| 12.5.  | 5  |koodin laadun korjausta
-| 13.5.  | 10 |koodin laadun korjausta
-| 14.5.  | 9  |koodin laadun korjausta
+| 10.5.  | 3  |tiedon tallennuksen toteutusta
+| 11.5.  | 2  |koodin laadun korjausta ja testausta
+| 12.5.  | 5  |testien kokeilua
+| 13.5.  | 10 |painikkeiden toteutus käyttöliittymään ja tallennuksen muokkausta
+| 14.5.  | 9  |sovelluksen dokumentointia ja tiedostojen päivitystä sovelluksen mukaiseksi
 | yht.  | 100  |
