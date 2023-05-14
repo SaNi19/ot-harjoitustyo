@@ -1,5 +1,5 @@
 ## Käyttöohje
-Laataa ohjelman [releasen](https://github.com/SaNi19/ot-harjoitustyo/releases/tag/Viikko6) lähdekoodi ja siirry kansioon **Game-app.**
+Laataa ohjelman [releasen](https://github.com/SaNi19/ot-harjoitustyo/releases/tag/Loppupalautus) lähdekoodi ja siirry kansioon **Game-app.**
 ## Ohjelman käynnistäminen
 
 ### Ohjelma alustetaan komennolla:
