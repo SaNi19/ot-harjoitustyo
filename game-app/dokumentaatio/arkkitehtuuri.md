@@ -25,7 +25,7 @@ Kun ohjelma käynnistetään, *main*-metodi kutsuu luokkaa `MySokobaan`. Pelin a
 ## MySokoban-pelin tietokannan toiminta ##
 
 ![GameServices-sekvenssikaavio](https://github.com/SaNi19/ot-harjoitustyo/blob/master/GameServices%20sekvenssikaavio.png)
-- `GameServices`-luokan *add_game_result*-metodi saa `MySokoban`-lukoan *game_end*-metodilta peissä käytetyt askeleet ja tallentaa ne tietokantaan
+- `GameServices`-luokan *add_game_result*-metodi saa `MySokoban`-lukoan *game_end*-metodilta pelissä käytetyt askeleet ja tallentaa ne tietokantaan
 - `GameServices`luokan *best_result*-metodi saa `MySokoban`-luokan *event*-metodilta pyynnön ja palauttaa tietokannasta pienimmän askelmäärän
 - jos tietokanassa ei ole yhtään tulosta, palauttaa viestin "*No results yet!*
 
