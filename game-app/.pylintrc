@@ -1,5 +1,4 @@
 [MASTER]
-
 # A comma-separated list of package or module names from where C extensions may
 # be loaded. Extensions are loading into the active Python interpreter and may
 # run arbitrary code.
@@ -9,8 +8,9 @@ extension-pkg-whitelist=pygame
 fail-under=10.0
 
 # Add files or directories to the blacklist. They should be base names, not
-# paths.
-ignore=CVS,ui,tests
+# paths.pointles
+ignore=CVS,tests,pointless-string-statement
+
 
 # Add files or directories matching the regex patterns to the blacklist. The
 # regex matches against base names, not paths.
@@ -386,7 +386,7 @@ module-naming-style=snake_case
 #module-rgx=
 
 # Colon-delimited sets of names that determine each other's naming style when
-# the name regexes allow several styles.
+# the name regexpointleses allow several styles.
 name-group=
 
 # Regular expression which should only match function or class names that do

@@ -51,3 +51,4 @@ class GameServices:
             print("Best result now is ", str(best))
         else:
             print("No results yet")
+

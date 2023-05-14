@@ -66,3 +66,5 @@ class TestMySokoban(unittest.TestCase):
         answer = True
 
         self.assertEqual(str(answer, "False"))
+
+    

@@ -1,5 +1,4 @@
 
-
 class MovePlayer:
     """Luokka, jonka avulla siirretään pelihahmoa ja palloja.
     """
@@ -18,7 +17,6 @@ class MovePlayer:
             game_end: Metodi, joka palauttaa True, jos kaikki pallot on varastossa, muuten False.
 
         """
-
 
         self.map = map
         self.height = height
@@ -49,8 +47,8 @@ class MovePlayer:
 
         """Esii pelihahmon sijainnin ja antaa pelihahmolle uude x- ja y-arvot.
         """
-
         old_player_y, old_player_x = self.find()
+        
         new_player_y = old_player_y + move_y
         new_player_x = old_player_x + move_x
 

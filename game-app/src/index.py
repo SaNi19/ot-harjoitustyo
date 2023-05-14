@@ -10,6 +10,7 @@ class MySokoban:
     """Luokka, joka vastaa pelikentän luomisesta ja pelin toiminnoista.
 
     """
+
     def __init__(self):
         self.self = self
         pygame.init()
@@ -37,7 +38,6 @@ class MySokoban:
         self.font1 = pygame.font.SysFont("Corbel", 25)
         self.font2 = pygame.font.SysFont("Corbel", 60)
         self.steps = 0
-
 
         self.loop()
         """Kutsutaan pelisilmukkametodia.
@@ -72,7 +72,7 @@ class MySokoban:
                      [1, 0, 3, 0, 1, 1, 0, 0, 0, 1],
                      [1, 0, 0, 0, 0, 0, 0, 0, 0, 1],
                      [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]]
-        
+
         self.step = 0
         """Askellaskuri.
             Args:
@@ -151,7 +151,7 @@ class MySokoban:
                         (self.quit_button.x + 5, self.quit_button.y+5))
 
         if self.game_end():
-        
+
             """Tarkistaa, onko kaikki pallot varastossa
 
                 Returns:
