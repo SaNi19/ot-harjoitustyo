@@ -9,8 +9,9 @@ class GameServices:
     def __init__(self, get_result):
         """Luokan kostruktori, joka luo uuden tuloksen.
 
-        Args:
+        Attributes:
             get_result: Pelissä käytetyt askeleet.
+
         """
         self.data = sqlite3.connect("resultlist.db")
         self.get_result = get_result
@@ -25,7 +26,7 @@ class GameServices:
             print("Table is created")
 
     def add_game_result(self, game_result):
-        """Lisäää pelaajan nimen ja pelissä käytetyt askeleet tietokantaan.
+        """Lisäää pelissä käytetyt askeleet tietokantaan.
 
         Args:
             game_result: Pelissä käytetyt askeleet.
@@ -33,11 +34,15 @@ class GameServices:
         result = game_result
         self.data.execute(
             "INSERT INTO Resultlist (result) VALUES (?)", [result])
+        """Lisää pelin askelten määrän tietokantaan.
+        """
 
     def best_result(self):
-        """Etsii pelattujen pelien tuloksen, jossa on käytetty vähiten askeleita.
-        Jos tietokannasta löytyy tulos, palauttaa tuloksen. 
-        Jos vielä ei ole tuloksia, palauttaa viestin "No results yet"
+        """Etsii pelattujen pelin tuloksen, jossa on käytetty vähiten askeleita.
+
+        Retrurns:
+            palauttaa tietokannan pienimmän tuloksen, jos tietokannassa on vähintään yksi tulos.
+            Muuten palauttaa viestin "Noresults yet"
 
         """
         best = self.data.execute(

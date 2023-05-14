@@ -6,8 +6,20 @@ class MovePlayer:
 
     def __init__(self, map, height, width, step, move_y, move_x, find, game_end):
         """Luokan konstruktori, joka luo pelihahmolle ja pallolle uuden sijainnin.
+
+        Attributes:
+            map: Pelitaulukko.
+            height: Pelitaulukon korkeus.
+            width: Pelitaulukon leveys.
+            step: Pelin askel-muuttuja.
+            move_y: Pelihahmon siirtymän y-arvo.
+            move_x: Pelihahmon siirtymän x-arvo.
+            find: Metodi, joka palauttaa pelihahmon sijainnin.
+            game_end: Metodi, joka palauttaa True, jos kaikki pallot on varastossa, muuten False.
+
         """
-        self.self = self
+
+
         self.map = map
         self.height = height
         self.width = width
@@ -18,7 +30,7 @@ class MovePlayer:
         self.game_end = game_end
 
     def move(self, move_y, move_x):
-        """
+        """Metodi, joka asettaa pelihahmon ja pallon x- ja y-arvot.
 
         Args:
             move_y: Siirtymä x-akselilla.
@@ -27,6 +39,8 @@ class MovePlayer:
         wall = 1
         ball = 3
         end = 5
+        """Pelilaudan numerointia vastaavat nimet.
+        """
 
         """Tarkistaa onko kaikki pallot varastossa.
         """
@@ -65,7 +79,7 @@ class MovePlayer:
             self.map[new_player_y][new_player_x] -= 3
             self.map[new_ball_y][new_ball_x] += 3
 
-        """Siirtää pelihamo pelilaudalla uuteen sijaintiin ja lisää askeleen.
+        """Siirtää pelihamon pelilaudalla uuteen sijaintiin ja lisää askeleen.
         """
 
         self.map[old_player_y][old_player_x] -= 4

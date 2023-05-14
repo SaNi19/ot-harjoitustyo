@@ -7,6 +7,9 @@ from move_player import MovePlayer
 
 
 class MySokoban:
+    """Luokka, joka vastaa pelikentän luomisesta ja pelin toiminnoista.
+
+    """
     def __init__(self):
         self.self = self
         pygame.init()
@@ -18,7 +21,11 @@ class MySokoban:
         self.best = self.game_services.best_result(self)
 
         self.images()
+        """Metodi, joka asettaa image-kansion kuvat taulukkoon.
+        """
         self.game()
+        """Metodi, joka luo pelilaudan.
+        """
 
         self.height = len(self.map)
         self.width = len(self.map[1])
@@ -34,13 +41,17 @@ class MySokoban:
         self.loop()
 
     def images(self):
+        """Asettaa kuvat taulukkoon.
+        """
         self.imageset = []
         for name in ["floor", "wall", "place", "ball", "player", "end", "player2"]:
             self.imageset.append(pygame.image.load(
                 os.path.join(self.dirname, "images", name + ".png")))
 
     def game(self):
-        self.step = 0
+        """Alustaa pelilaudan.
+        """
+
         self.map = [[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
                     [1, 4, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1],
                     [1, 0, 0, 3, 1, 0, 3, 0, 0, 3, 0, 1, 1, 0, 1, 1],
@@ -58,8 +69,16 @@ class MySokoban:
                      [1, 0, 3, 0, 1, 1, 0, 0, 0, 1],
                      [1, 0, 0, 0, 0, 0, 0, 0, 0, 1],
                      [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]]
+        
+        self.step = 0
+        """Askellaskuri.
+            Args:
+            step: Askeleet alussa 0.
+        """
 
     def events(self):
+        """Tapahtumankäsittelijä.
+        """
         for command in pygame.event.get():
             if command.type == pygame.KEYDOWN:
                 if command.key == pygame.K_LEFT:
@@ -83,12 +102,20 @@ class MySokoban:
                     self.game()
 
     def find(self):
+        """Etsii pelihahmon sijainnin pelilaudalla.
+
+        Returns:
+            column: y:n arvo
+            row: x:n arvo
+        """
         for column in range(self.height):
             for row in range(self.width):
                 if self.map[column][row] in [4, 6]:
                     return (column, row)
 
     def display_game(self):
+        """Piirtää pelilaudan.
+        """
         self.sreen.fill((100, 0, 255))
         for column in range(self.height):
             for row in range(self.width):
@@ -121,6 +148,15 @@ class MySokoban:
                         (self.quit_button.x + 5, self.quit_button.y+5))
 
         if self.game_end():
+        
+            """Tarkistaa, onko kaikki pallot varastossa
+
+                Returns:
+                    True: Jos kaikki pallot ovat varastossa.
+                    False: Jos kaikki pallot eivät ole varastossa.
+                    text: Jos kaikki pallot on varastossa, tulostaa 
+                    näytölle teksin "Game over! All right!"
+            """
             result = self.step
             self.game_services.add_game_result(self, result)
             tekst = self.font1.render(
@@ -134,6 +170,12 @@ class MySokoban:
         pygame.display.flip()
 
     def game_end(self):
+        """Tarkistaa, onko palloja vielä pelilaudalla.
+
+            Returns:
+                True: Jos pelilaudalla ei ole enään palloja.
+                False: Jos pelilaudalta löytyy vielä palloja.
+        """
         for column in range(self.height):
             for row in range(self.width):
                 if self.map[column][row] in [2, 6]:
@@ -142,6 +184,8 @@ class MySokoban:
         return True
 
     def loop(self):
+        """Pelisilmukka joka kuuntelee tapahtumia ja piirtää näytön.
+        """
         while True:
             self.events()
             self.display_game()
