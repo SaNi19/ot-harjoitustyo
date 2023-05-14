@@ -39,7 +39,7 @@ class MySokoban:
         self.part = self.imageset[0].get_width()
         gamemap_height = self.part * self.height
         gamemap_width = self.part * self.width
-        self.sreen = pygame.display.set_mode(
+        self.screen = pygame.display.set_mode(
             (gamemap_width, gamemap_height + self.part))
         self.font1 = pygame.font.SysFont("Corbel", 25)
         self.font2 = pygame.font.SysFont("Corbel", 60)
@@ -125,35 +125,35 @@ class MySokoban:
     def display_game(self):
         """Piirtää pelilaudan.
         """
-        self.sreen.fill((100, 0, 255))
+        self.screen.fill((100, 0, 255))
         for column in range(self.height):
             for row in range(self.width):
                 square = self.map[column][row]
-                self.sreen.blit(
+                self.screen.blit(
                     self.imageset[square], (row * self.part, column * self.part))
 
         tekst = self.font1.render("Step: " + str(self.step), True, (0, 0, 0))
-        self.sreen.blit(tekst, (25, self.height * self.part + 10))
+        self.screen.blit(tekst, (25, self.height * self.part + 10))
 
         tekst = self.font1.render(
             "Best result: " + str(self.best), True, (0, 0, 0))
-        self.sreen.blit(tekst, (150, self.height * self.part + 10))
+        self.screen.blit(tekst, (150, self.height * self.part + 10))
 
         self.new_game_button_text = self.font1.render(
             'New game', True, 'white')
         self.new_game_button = pygame.Rect(
             550, self.height * self.part + 10, 100, 30)
 
-        pygame.draw.rect(self.sreen, (200, 0, 0), self.new_game_button)
-        self.sreen.blit(self.new_game_button_text,
+        pygame.draw.rect(self.screen, (200, 0, 0), self.new_game_button)
+        self.screen.blit(self.new_game_button_text,
                         (self.new_game_button.x + 5, self.new_game_button.y+5))
 
         self.quit_button_text = self.font1.render('Quit', True, 'white')
         self.quit_button = pygame.Rect(
             700, self.height * self.part + 10, 80, 30)
 
-        pygame.draw.rect(self.sreen, (200, 0, 0), self.quit_button)
-        self.sreen.blit(self.quit_button_text,
+        pygame.draw.rect(self.screen, (200, 0, 0), self.quit_button)
+        self.screen.blit(self.quit_button_text,
                         (self.quit_button.x + 5, self.quit_button.y+5))
 
         if self.game_end():
@@ -172,9 +172,9 @@ class MySokoban:
                 "Game over! All right!", True, (255, 0, 0))
             tekst_x = self.part * self.width / 2 - tekst.get_width() / 2
             tekst_y = self.part * self.height / 2 - tekst.get_height() / 2
-            pygame.draw.rect(self.sreen, (0, 0, 0), (tekst_x,
+            pygame.draw.rect(self.screen, (0, 0, 0), (tekst_x,
                              tekst_y, tekst.get_width(), tekst.get_height()))
-            self.sreen.blit(tekst, (tekst_x, tekst_y))
+            self.screen.blit(tekst, (tekst_x, tekst_y))
 
         pygame.display.flip()
 
