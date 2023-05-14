@@ -21,10 +21,10 @@ class MySokoban:
         self.best = self.game_services.best_result(self)
 
         self.images()
-        """Metodi, joka asettaa image-kansion kuvat taulukkoon.
+        """Kutsutaan metodi, joka asettaa image-kansion kuvat taulukkoon.
         """
         self.game()
-        """Metodi, joka luo pelilaudan.
+        """Kutsutaan metodi, joka luo pelilaudan.
         """
 
         self.height = len(self.map)
@@ -38,10 +38,13 @@ class MySokoban:
         self.font2 = pygame.font.SysFont("Corbel", 60)
         self.steps = 0
 
+
         self.loop()
+        """Kutsutaan pelisilmukkametodia.
+        """
 
     def images(self):
-        """Asettaa kuvat taulukkoon.
+        """Metodi, joka settaa kuvat taulukkoon.
         """
         self.imageset = []
         for name in ["floor", "wall", "place", "ball", "player", "end", "player2"]:
