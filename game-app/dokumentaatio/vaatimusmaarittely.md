@@ -4,8 +4,8 @@
 
 MySokoban on yhden pelaajan älypelisovellus, jossa pelaajan tavoitteena on siirtää pelihahmon avulla pelilaudalla olevat pallot käytäviä pitkin varastoon. Peli päättyy, kun kaikki pallot ovat varastossa. Alkuvaiheessa peli sisältää vain yhden pelilautaversion, mutta myöhemmin peliä voidaan laajentaa lisäämällä uusia vaativuustasoltaan erilaisia pelilautoja.
 
-## Tekstikäyttöliittymä
-Peli avautuu tekstikäyttöliittymään, jossa käyttäjä voi tallentaa oman nimen ja pelissä käyttämänsä askeleet tietokantaan. Käyttäjä voi hakea tietokannasta pelituloksia nimen avulla tai kaikkien pelinen parhaan tuloksen. Tekstiliittymästä käyttäjä voi käynnistää pelin.
+## Graaffinen käyttöliittymä
+Peli avautuu pelinäkymään. Pelinäkymässä käyttäjä voi pelata peliä nuolinäppäiminen avulla. Pelinäkymän alareunassa näkyy pelissä käytetyt askeleet. Lisäksi pelinäkymän alareunassa näkyy paras pelitulos, jossa on käytetty vähiten askeleita. Pelilaudalla on **New game**-nappi, jota painamalla käyttäjä voi aloittaa uuden pelin. Käyttäjä voi sulkea pelin painamalla **Quit**-painiketta.
 
 ## Pelikäyttöliittymäluonnos
 
@@ -17,9 +17,8 @@ Peli avautuu tekstikäyttöliittymään, jossa käyttäjä voi tallentaa oman ni
 - Käyttäjä voi seurata pelissä käyttämiensä askelten määrää ✓
 - Peli päättyy, kun kaikki pallot ovat varastossa ✓
 - Käyttäjä voi käynnistää uuden pelin tai sulkea sovelluksen ✓
-- Käyttäjän voi tallentaa nimen ja pelituloksen tietokantaan ✓ 
-- Käyttäjä voi hakea pelituloksen tietokannasta ✓
-- Käyttäjä voi hakea parhaan pelituloksen tietokannasta ✓
+- Käyttäjän pelitulos tallentuu tietokantaan ✓ 
+- Käyttäjä näkee parhaan pelituloksen ✓
 
 ## Sovelluksen jatkokehitys
 Sovellusta voidaan jatkokehittää esimerkiksi lisäämällä peliin kirjautumistoiminto ja uusia pelilautoja.
