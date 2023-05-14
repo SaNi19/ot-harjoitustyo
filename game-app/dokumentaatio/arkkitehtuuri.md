@@ -1,10 +1,10 @@
 ## Luokkakaavio ##
 Sovelluksen luokkia ovat `MySokoban`, `GameServices` ja `MovePlayer`. Lisäksi sovelluksessa on **images**-kansio kuville ja sqlite-tietokantaa käyttävä **resultlist.db**. 
-- `MySokoban`-luokan toteuttaa pelin luomisen, tapahtumien käsittelyn ja tulostuksen.
+- `MySokoban`-luokka toteuttaa pelin luomisen, tapahtumien käsittelyn ja tulostuksen.
 - `MovePlayer`-luokka vastaa pelihamon ja pallon sijaintien y- ja x-arvojen asettamisesta.
 - `GameServices`-luokan tehtävänä on hoitaa tiedon tallennus tietokantaan ja tiedon hakeminen tietokannasta.
 - **images**-kansiossa on pelilaudan kuvat jotka tallennetaan *imageset*-taulukkoon.
-- **resultlist.db** on sqliteä käyttävä tietokantataulu, johon voidaan tallentaa pelin tulos ja josta voidaan hakea kaikkien pelattujen pelien paras tulos.
+- **resultlist.db** on sqliteä käyttävä tietokantataulu, johon tallennetaan pelin tulos ja josta haetaan kaikkien pelattujen pelien paras tulos.
 
 ![Luokkakaavio](https://github.com/SaNi19/ot-harjoitustyo/blob/master/Luokkakaavio.png)
 
